@@ -10,8 +10,8 @@ LANGUAGE LANG_JAPANESE, 0x1
     MENUITEM "Save Map\tCtrl+S(&S)",  57603
     MENUITEM "Save as(&A)...",  57604
     MENUITEM SEPARATOR
-    MENUITEM "[Pro]Create individual encryption(.wolfx)",  33076
-    MENUITEM "Create Game Data(&Ｇ)",  32846
+    MENUITEM "[Pro] Encrypt Files Individually (.wolfx)",  33076
+    MENUITEM "Create Game Data(&G)",  32846
     MENUITEM SEPARATOR
     MENUITEM "Exit Editor(&X)",  57665
   }
@@ -28,8 +28,8 @@ LANGUAGE LANG_JAPANESE, 0x1
     MENUITEM "Toolbar\t(&T)",  59392
     MENUITEM "Tileset Editor",  32792
     MENUITEM "System Database (Core Data)",  32797
-    MENUITEM "User Database (Stationary Value Data)",  32790
-    MENUITEM "Variable Database (Manipulable Data)",  32831
+    MENUITEM "User Database (Fixed Values Data)",  32790
+    MENUITEM "Variable Database (Changeable Data)",  32831
     MENUITEM "Common Events",  32815
     MENUITEM "Map Selection",  32823
     MENUITEM "Task List",  33108
@@ -190,7 +190,7 @@ LANGUAGE LANG_JAPANESE, 0x1
     MENUITEM "Paste\t&V",  32986
     MENUITEM "Delete\t&Del",  32987
     MENUITEM SEPARATOR
-    MENUITEM "Export Type Settings to File",  32988
+    MENUITEM "Export Type Definition to File",  32988
     MENUITEM "Export Type and All Data to File",  32989
   }
 }
