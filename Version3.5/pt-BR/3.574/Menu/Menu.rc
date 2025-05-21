@@ -11,7 +11,7 @@ LANGUAGE LANG_JAPANESE, 0x1
     MENUITEM "Salvar como(&A)...",  57604
     MENUITEM SEPARATOR
     MENUITEM "[Pro]Criar encripta\xE7\xF5es individuais(.wolfx)",  33076
-    MENUITEM "Criar Game Data(&Ｇ)",  32846
+    MENUITEM "Criar Game Data(&G)",  32846
     MENUITEM SEPARATOR
     MENUITEM "Sair do Editor(&X)",  57665
   }
