@@ -1,10 +1,10 @@
 0: -----
-1:Confirm [Keyboard]
-2:Cancel [Keyboard]
-3:Sub [Keyboard]
-4:Confirm [Pad]
-5:Cancel [Pad]
-6:Sub [Pad]
+1:Confirm (Keyboard)
+2:Cancel (Keyboard)
+3:Sub (Keyboard)
+4:Confirm (Pad)
+5:Cancel (Pad)
+6:Sub (Pad)
 7: -----
 8: -----
 9: -----
@@ -18,9 +18,9 @@
 17: -----
 18: -----
 19:[RO] Third-Party Runtime ID
-20:Proxy Address [Ex: aa.net]
-21:Proxy Port [Ex: 80]
-22:[RO] Downloading File Contents
+20:Proxy Address (Example: aa.net)
+21:Proxy Port (Example: 80)
+22:[RO] Downloading Data
 23: -----
 24: -----
 25:[RO] Message Text

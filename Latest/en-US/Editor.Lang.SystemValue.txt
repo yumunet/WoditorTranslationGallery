@@ -7,14 +7,14 @@
 6:Message Continue Icon Y (Add to Sys2)
 7:Initial Choice (0,1,2...)
 8:Base Font Size
-9:Message Speed (X char./s)
+9:Message Speed (X chars/s)
 10:Message Wait (X frames)
-11:Picture String Speed (X char./s)
-12:Showing Message? (1:Yes)
+11:Picture String Speed (X chars/s)
+12:Message Showing? (1:Yes)
 13:Event Active? (1:Yes)
 14:Show Choice Window? (1:ON)
-15:Direction Key Repeat First Wait (Frames)
-16:Direction Key Repeat Next Wait (Frames)
+15:Direction Key Repeat First Wait (frames)
+16:Direction Key Repeat Next Wait (frames)
 17:Choice Confirm SE (SysDB 3)
 18:Choice Cursor SE (SysDB 3)
 19:Choice Cancel SE (SysDB 3)
@@ -26,26 +26,26 @@
 25:Current Save (0+)
 26:Choice Window X Margin
 27:Choice Window Y Margin
-28:Elapsed Frames [Loops at 10M]
-29:Playtime (in seconds)
-30:[RO] Playtime (in ms)
+28:Elapsed Frames (Loops at 10M)
+29:Playtime (s)
+30:[RO] Playtime (ms)
 31:[RO] Inner FPS (each second)
 32:[RO] Screen FPS (each second)
 33:Frame Skip Level (0-2)
-34:Characters Y Offset [-(TileSize-1) to 0]
-35:Leader Moving? (1:Yes) *Between Tiles?
+34:Characters Y Offset (-(TileSize-1) to 0)
+35:Leader Moving? (Between Tiles?) [1:Yes]
 36:Leader Shadow (SysDB 9)
 37:Distance Between Members (Steps)
-38:Take KB Input [1:Mouse&Touch +2:Pad]
+38:Take KB Input (1:Mouse&Touch +2:Pad)
 39:[RO] KB Input (0:Entered/-1:Canceled)
 40:KB Input Text X
 41:KB Input Text Y
-42:KB Input Text AA [0:OFF/1:ON +2:Edge]
+42:KB Input Text AA (0:OFF/1:ON +2:Edge)
 43:[RO] Net/Downloaded Size (bytes)
 44:[RO] Net/Est. Size (bytes) [-1:Unknown]
 45:[RO] Net/Download Speed
-46:[RO] Net/Connection Time (seconds)
-47:[RO] Net/Remaining Time (seconds)
+46:[RO] Net/Connection Time (s)
+47:[RO] Net/Remaining Time (s)
 48:[RO] Net/Status -1:Failed/0:Doing/1:Done
 49: -----
 50: -----
@@ -75,14 +75,14 @@
 74:Show Mouse Pointer? (1:ON)
 75: -----
 76: -----
-77:Time [Year]
-78:Time [Month]
-79:Time [Day]
-80:Time [Hour]
-81:Time [Minute]
-82:Time [Second]
+77:Time (Year)
+78:Time (Month)
+79:Time (Day)
+80:Time (Hour)
+81:Time (Minute)
+82:Time (Second)
 83: -----
-84:Screen Resolution (For Old/0-2/-1:Other)
+84:Screen Resolution (0-2, -1:Other)
 85:Rendering Mode (0:3D/1:Software)
 86: -----
 87:Follower 1 Shadow (-1:Leader's)
@@ -91,22 +91,22 @@
 90:Follower 4 Shadow (-1:Leader's)
 91:Follower 5 Shadow (-1:Leader's)
 92: -----
-93:Playing BGM Pan [±255]
-94:Playing BGS Pan (Ch=Sys99) [±255]
-95:Playing BGM Volume [%]
-96:Playing BGM Tempo/Pitch [%]
-97:Playing BGS Volume (Ch=Sys99) [%]
-98:Playing BGS Pitch (Ch=Sys99) [%]
+93:Playing BGM Pan (±255)
+94:Playing BGS Pan (±255) [Ch=Sys99]
+95:Playing BGM Volume (%)
+96:Playing BGM Tempo/Pitch (%)
+97:Playing BGS Volume (%) [Ch=Sys99]
+98:Playing BGS Pitch (%) [Ch=Sys99]
 99:BGS Channel
-100:BGM Volume Multiplier [%]
-101:BGS Volume Multiplier [%]
-102:SE Volume Multiplier [%]
+100:BGM Volume Multiplier (%)
+101:BGS Volume Multiplier (%)
+102:SE Volume Multiplier (%)
 103: -----
 104:Map Scroll X
 105:Map Scroll Y
 106: -----
 107: -----
-108:[RO] Processed Commands in Current Frame
+108:[RO] Commands Processed This Frame
 109: -----
 110:Current Random Seed
 111:[RO] Window Active? (1:Yes)
@@ -117,7 +117,7 @@
 116:[RO] Screen Width
 117:[RO] Screen Height
 118:[RO] Tile Size
-119:[RO] Screen Resolution Multiplier x[1-3]
+119:[RO] Screen Resolution Multiplier (1x-3x)
 120:Reset Log (0:None/1:F12/2:Command)
 121: -----
 122:Smoothly Scale Zooming Map&Ev? (1:ON)[α]
@@ -127,37 +127,37 @@
 126: -----
 127:Don't Save Map Tiles? (1:ON)
 128: -----
-129:Event Diagonal Move X Speed [%]
-130:Event Diagonal Move Y Speed [%]
+129:Event Diagonal Move X Speed (%)
+130:Event Diagonal Move Y Speed (%)
 131:Leader Center X Offset
 132:Leader Center Y Offset
 133: -----
-134:Directional Input with D-Pad? [1:ON]
-135:Directional Input with L-Stick? [1:ON]
-136:Precise Window Scale [0.1%] (-1:Auto)
-137:Window Scale [%] (-1:Auto)
-138:Screen Mode [0:Window/1:Borderless/2:FS]
-139:[P] Show Full Map When Zoomed Out?(1:ON)
-140:Window Scaling Mode [0:Sharp/1:Smooth]
-141:[P] System Language [0:JA/1:EN]
+134:Directional Input with D-Pad? (1:ON)
+135:Directional Input with L-Stick? (1:ON)
+136:Precise Window Scale (0.1%) [-1:Auto]
+137:Window Scale (%) [-1:Auto]
+138:Screen Mode (0:Window/1:Borderless/2:FS)
+139:[P] Show More Map on Zoom-Out? (1:ON)
+140:Window Scaling Mode (0:Sharp/1:Smooth)
+141:[P] System Language (0:JA/1:EN)
 142: -----
-143:[RO] Pro Commands Available? [1:Yes]
+143:[RO] Pro Commands Available? (1:Yes)
 144: -----
 145: -----
 146:DirectInput for PS/Switch? (Recommended)
 147: -----
-148:[P] Next Startup Window Scale [0.1%]
+148:[P] Next Startup Window Scale (0.1%)
 149: -----
-150:Disable Special Char. Conversion [1:ON]
+150:Disable Special Chars Conversion (1:ON)
 151: -----
 152: -----
 153: -----
 154: -----
-155:[RO] Character Movement Direction [4/8]
-156:[RO] Character Movement Unit [0:0.5/1:1]
-157:[RO] Horizontal Spacing [px]
-158:[RO] Line Spacing [px]
-159:[RO] Choice Separation [px]
+155:[RO] Character Movement Direction (4/8)
+156:[RO] Character Movement Unit (0:0.5/1:1)
+157:[RO] Horizontal Spacing (px)
+158:[RO] Line Spacing (px)
+159:[RO] Choice Separation (px)
 160: -----
 161: -----
 162: -----
