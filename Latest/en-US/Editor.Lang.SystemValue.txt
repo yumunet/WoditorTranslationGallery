@@ -158,7 +158,7 @@
 157:[RO] Horizontal Spacing (px)
 158:[RO] Line Spacing (px)
 159:[RO] Choice Separation (px)
-160: -----
+160:[RO] Max Map Layer Count
 161: -----
 162: -----
 163: -----
