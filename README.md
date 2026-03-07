@@ -7,7 +7,7 @@
 
 This repository contains translations for WolfRPGEditor
 
-🇺🇸 en-US | 🇧🇷 pt-BR | 🇵🇹 pt-PT | 🇵🇱 pl-PL | 🇷🇺 ru | 🇰🇷 ko-KR
+🇺🇸 en-US | 🇧🇷 pt-BR | 🇵🇹 pt-PT | 🇵🇱 pl-PL | 🇷🇺 ru | 🇰🇷 ko-KR | 🇨🇳 zh-TW
 
 Other versions have yet to be added.
 
@@ -115,3 +115,8 @@ He is the developer of WolfRPGEditor and I would like to thank him for putting t
 
 🇰🇷 kr-KR<br/>
 **(v2.296, v3.14, v3.27, v3.39, v3.611, v3.613 and v3.632)** ko-KR translation by [Kamasun](https://sites.google.com/view/kamasun214/).<br>Placed here for archiving purposes.
+
+<br/>
+
+🇨🇳 zh-TW<br/>
+**(v3.34)** zh-TW translation by [Swiftstar](https://github.com/Swiftstar)<br>The translation was produced with **GPT-5.3-Codex**
