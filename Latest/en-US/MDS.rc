@@ -60,10 +60,10 @@ LANGUAGE LANG_JAPANESE, 0x1
   {
     MENUITEM "&About WOLF RPG Editor",  57664
     MENUITEM "WOLF RPG Editor Official Site (JP)",  32871
-    POPUP "└Variable Reference/Special Characters Index"
+    POPUP "└ Variable Reference Value / Special Characters Pages"
     {
-      MENUITEM "Open Variable Reference Page (JP)",  33090
-      MENUITEM "Open Special Characters Page (JP)",  33092
+      MENUITEM "Variable Reference Value (JP)",  33090
+      MENUITEM "Special Characters (JP)",  33092
     }
     MENUITEM "WOLF RPG Editor &Manual (JP)",  32861
     MENUITEM "Perfect Guide Site (JP)",  32872
@@ -1763,7 +1763,7 @@ FONT 9, "MS Shell Dlg"
 
 159 DIALOGEX 0, 0, 277, 178
 STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
-CAPTION "Effects"
+CAPTION "Effect"
 LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
@@ -1826,7 +1826,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1062, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 158, 131, 26, 12 
    CONTROL "", 1047, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 182, 131, 9, 11 
    CONTROL "Insert", 1068, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 209, 148, 48, 20 
-   CONTROL "Picture/Character/Map/Mask Effect (Newer Effects take precedence.)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 14, 3, 258, 56 
+   CONTROL "Picture/Character/Map/Mask Effect (Newer effects take precedence.)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 14, 3, 258, 56 
    CONTROL "X:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 104, 72, 8, 9 , WS_EX_TRANSPARENT
    CONTROL "Y:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 148, 72, 8, 9 , WS_EX_TRANSPARENT
    CONTROL "+:Right -:Left / +:Down -:Up", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 104, 84, 101, 9 
@@ -1989,7 +1989,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1017, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 80, 85, 9, 14 
    CONTROL "'s", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 97, 88, 8, 9 
    CONTROL "", 1356, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 108, 85, 156, 100 
-   CONTROL "(Changes from Effects are not accounted for.)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 108, 99, 147, 9 
+   CONTROL "(Changes from the Effect command are not accounted for.)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 78, 100, 190, 9 
    CONTROL "", 1355, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 47, 112, 210, 92 
    CONTROL "Insert", 1068, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 207, 132, 44, 22 
 }
@@ -2038,8 +2038,8 @@ FONT 9, "MS Shell Dlg"
    CONTROL "7-Pattern", 1374, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_TABSTOP, 552, 284, 43, 10 
    CONTROL "Font to Use (If blank, \"Meiryo UI\")", 1894, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 323, 3, 122, 185 
    CONTROL "", 1061, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 349, 15, 92, 13 
-   CONTROL "Horizontal Spacing (px):", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 329, 130, 74, 9 
-   CONTROL "Line Spacing (px):", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 329, 142, 74, 9 
+   CONTROL "Horizontal Spacing (px):", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 328, 129, 74, 9 
+   CONTROL "Line Spacing (px):", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 328, 142, 74, 9 
    CONTROL "", 1259, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 404, 127, 38, 13 
    CONTROL "", 1015, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 426, 126, 11, 14 
    CONTROL "", 1260, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 404, 141, 38, 13 
@@ -2069,7 +2069,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Leader/Followers", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 223, 175, 53, 9 
    CONTROL "", 1485, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 230, 185, 43, 103 
    CONTROL "", 1486, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 276, 185, 42, 103 
-   CONTROL "When using Base System, this has no effect.\r\nSet the party using VariableDB Type 6.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 308, 157, 19 , WS_EX_STATICEDGE
+   CONTROL "When using the Base System, this has no effect.\r\nSet the party using VariableDB Type 6.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 308, 157, 19 , WS_EX_STATICEDGE
    CONTROL "Picture Scale Method", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 220, 33, 97, 49 
    CONTROL "Inactive Window Behavior", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 216, 88, 102, 52 
    CONTROL "Distinct and Rough\r\n(Standard)", 1614, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP, 227, 44, 84, 17 
@@ -3146,7 +3146,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
    CONTROL "Folder:", 1866, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 128, 53, 9 
-   CONTROL "Other Features Added in Pro Version:\r\n - Free screen resolution in Game Settings. / Added Game Settings for Pro.\r\n - Added map effects to the Effects command.\r\n - Added [P] System Variables and System Strings.\r\n - Download command with Zip extraction and browser opening, rate limit removal.\r\n - Added the Protection feature. / Additional options for Create Game Data.\r\nFor more information, see the \"[P]\" pages in the manual (Japanese).", 1861, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 2, 260, 71 , WS_EX_STATICEDGE
+   CONTROL "Other Features Added in Pro Version:\r\n - Free screen resolution in Game Settings. / Added Game Settings for Pro.\r\n - Added map effects to the Effect command.\r\n - Added [P] System Variables and System Strings.\r\n - Download command with Zip extraction and browser opening, rate limit removal.\r\n - Added the Protection feature. / Additional options for Create Game Data.\r\nFor more information, see the \"[P]\" pages in the manual (Japanese).", 1861, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 2, 260, 71 , WS_EX_STATICEDGE
    CONTROL "Restart Game\r\n(Arguments are kept)", 1069, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 9, 74, 75, 23 
    CONTROL "Commands with Options", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 5, 99, 267, 77 
    CONTROL "Function", 1285, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 9, 112, 38, 10 
@@ -3280,7 +3280,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
    CONTROL 1674, -1, STATIC, SS_BITMAP | WS_CHILD | WS_VISIBLE, 19, 36, 37, 37 
-   CONTROL " With Base RPG System:\r\n\r\n - Common Events, User DB and Variable DB for Base System\r\n - Only two maps: \"Title Map\" and \"Post-Start Map\"\r\n - Preconfigured system images and sounds (SystemFile)\r\n - Four preconfigured tileset settings\r\n - Several character sprites, monster images and background music\r\n\r\n What you can do in Test Play: Use the title screen, walk around the island after starting, and open the menu with the Cancel key.", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 77, 25, 220, 93 
+   CONTROL " With Base RPG System:\r\n\r\n - Common Events, User DB and Variable DB for the Base System\r\n - Only two maps: \"Title Map\" and \"Post-Start Map\"\r\n - Preconfigured system images and sounds (SystemFile)\r\n - Four preconfigured tileset settings\r\n - Several character sprites, monster images and background music\r\n\r\n What you can do in Test Play: Use the title screen, walk around the island after starting, and open the menu with the Cancel key.", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 77, 25, 220, 93 
    CONTROL "Cancel", 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 249, 209, 50, 17 
    CONTROL "Create Empty Data with Base RPG System", 1898, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 76, 64, 36 
    CONTROL 1673, -1, STATIC, SS_BITMAP | WS_CHILD | WS_VISIBLE, 20, 130, 37, 37 
@@ -3488,7 +3488,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   193, 	"A minimal new game project has been created in the Data folder.\r\n\r\nWelcome to the world of WOLF RPG Editor.\r\nEnjoy developing your game to your heart's content!"
   194, 	"Could not create Data folder.\r\nProcessing canceled."
   195, 	"Val."
-  196, 	"[Empty Data with Basic RPG System] or [Completely Empty Data],\r\nwhich initial data do you want to create?\r\n\r\n■ If you select \"Yes\": [Empty Data with Base RPG System]\r\n - Common Events, User DB and Variable DB for Base System.\r\n - Only two maps: \"Title Map\" and \"Post-Start Map.\"\r\n - Preconfigured system images and sounds (SystemFile).\r\n - Several character sprites, monster images and background music.\r\n - Four preconfigured tileset settings.\r\n  Creates a Data folder with the above RPG creation data.\r\n\r\n■ If you select \"No\": [Completely Empty Data]\r\n - Only one starting map.\r\n - No assets or data.\r\n  Creates a Data folder with the above empty data.\r\n\r\n■ If you select \"Cancel\":\r\n  The process will be canceled."
+  196, 	"[Empty Data with Basic RPG System] or [Completely Empty Data],\r\nwhich initial data do you want to create?\r\n\r\n■ If you select \"Yes\": [Empty Data with Base RPG System]\r\n - Common Events, User DB and Variable DB for the Base System.\r\n - Only two maps: \"Title Map\" and \"Post-Start Map.\"\r\n - Preconfigured system images and sounds (SystemFile).\r\n - Several character sprites, monster images and background music.\r\n - Four preconfigured tileset settings.\r\n  Creates a Data folder with the above RPG creation data.\r\n\r\n■ If you select \"No\": [Completely Empty Data]\r\n - Only one starting map.\r\n - No assets or data.\r\n  Creates a Data folder with the above empty data.\r\n\r\n■ If you select \"Cancel\":\r\n  The process will be canceled."
   197, 	"The basic data folder \"%s\" specified by the -basic option did not exist.\r\n\r\nStartup aborted."
   198, 	"The basic data folder has been changed to \"%s\" by the -basic option.\r\n\r\nWhen editing this time, please read any occurrence of the folder name \"BasicData\" in error messages as \"%s\"."
   199, 	"The data you tried to open is outdated (version 2 or earlier), so a conversion to version 3 was attempted. However, it could not be started because the -basic option is set.\r\nPlease restart without the -basic option.\r\n\r\nNote: Files in the basic data folder cannot be converted unless the folder itself is named \"BasicData\"."
@@ -3841,7 +3841,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   10212, 	"Condition (String)"
   10213, 	"Key Input"
   10214, 	"Picture"
-  10215, 	"Effects"
+  10215, 	"Effect"
   10216, 	"Sound"
   10217, 	"Save/Load"
   10218, 	"Party Sprites"
@@ -6072,7 +6072,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11913, 	"XY Only"
   11914, 	" "
   11915, 	" Link [As Picture]"
-  11916, 	"■Game.exe v3.50\r\n●The display interval of special characters p[X], [X], and mg[X] is now faster.\r\n●\"DB Management\" now flexibly converts between numbers and strings (old behavior caused an error).\r\n●When a picture is erased with a duration of 0 frames, the picture information now cannot be gotten by Set Variable+ immediately afterwards. (In the old behavior, the picture information can be gotten by Set Variable+ during the same frame that the picture was erased over 0 frames.)\r\n●When a character's body sprite is erased by the \"Change Character Sprite\" command of \"Effects\", all layers are now erased. (In the old behavior, all layers disappeared visually, but the overlay layers remained internally.)\r\n●\"Event ID at Cursor\" in \"Other\" of Set Variable+ now takes map zoom into account. (In the old behavior, it does not take map zoom into account.)\r\n●When an event touches the leader by \"Approach Event\" or \"Approach Position\" commands of \"Move Route\", the event is now triggered by \"Event Touch\". (In the old behavior, these two commands do not activate Event Touch.)\r\n●When the leader touches an event by Move Route in \"Parallel Process\", the event is now triggered by \"Player Touch\". (In the old behavior, \"Player Touch\" is not activated when an event is touched by Move Route.)\r\n●Fixed a bug where the continue icon goes out of screen when a large value is set in \"Sys6:Message Continue Icon Y\" for 320x240 screen resolution.\r\n●Fixed a bug where \"Event Touch\" events placed at position (0,0) were triggered once after startup or during loading.\r\n●Fixed a bug where scroll-linked pictures were not displayed in the expected position after a certain loop.\r\n●When a forced picture pattern is overwritten by \"Character\" in \"Effects\", the pattern value returned by \"Set Variable+\" is now also changed during the same frame. (In the old behavior, it is delayed by one frame.)\r\n●The sprite of an event with a tile can now also be changed by \"Change Character Sprite\" in \"Character\" of \"Effects\". (In the old behavior, the sprite of an event with a tile cannot be changed.)\r\n●Fixed a bug where the run state was stuck when \"Reserved\" and \"Confirm Key / Touch\" events were triggered in the same frame.\r\n●Fixed a bug where if the game was saved while talking to a map event, it remained the same direction after loading and cannot be restored.\r\n●Fixed a bug where the cursor width of a Choice is smaller than the character width when the character spacing was reduced by \\-[X], etc.\r\n●Fixed a bug where if a string picture is set to an empty string, its image size returned by Set Variable+ remained the previous value.\r\n●Fixed a bug where \"Passable (Tile & Event)\" of Set Variable+ was used for a 0.5x1 event, and only the head side was hit, not the foot side.\r\n●\"Get Type/Data/Field Number\" of DB Management now return -1 if a nonexistent name is specified. (In the old behavior, they return 0 after the error message.)\r\n  →  If you want to revert to the old behavior, set \"Adjust Game.exe Version\" to \"Old Version 3.390\" or earlier."
+  11916, 	"■Game.exe v3.50\r\n●The display interval of special characters p[X], [X], and mg[X] is now faster.\r\n●\"DB Management\" now flexibly converts between numbers and strings (old behavior caused an error).\r\n●When a picture is erased with a duration of 0 frames, the picture information now cannot be gotten by Set Variable+ immediately afterwards. (In the old behavior, the picture information can be gotten by Set Variable+ during the same frame that the picture was erased over 0 frames.)\r\n●When a character's body sprite is erased by the \"Change Character Sprite\" command of \"Effect\", all layers are now erased. (In the old behavior, all layers disappeared visually, but the overlay layers remained internally.)\r\n●\"Event ID at Cursor\" in \"Other\" of Set Variable+ now takes map zoom into account. (In the old behavior, it does not take map zoom into account.)\r\n●When an event touches the leader by \"Approach Event\" or \"Approach Position\" commands of \"Move Route\", the event is now triggered by \"Event Touch\". (In the old behavior, these two commands do not activate Event Touch.)\r\n●When the leader touches an event by Move Route in \"Parallel Process\", the event is now triggered by \"Player Touch\". (In the old behavior, \"Player Touch\" is not activated when an event is touched by Move Route.)\r\n●Fixed a bug where the continue icon goes out of screen when a large value is set in \"Sys6:Message Continue Icon Y\" for 320x240 screen resolution.\r\n●Fixed a bug where \"Event Touch\" events placed at position (0,0) were triggered once after startup or during loading.\r\n●Fixed a bug where scroll-linked pictures were not displayed in the expected position after a certain loop.\r\n●When a forced picture pattern is overwritten by \"Character\" in \"Effect\", the pattern value returned by \"Set Variable+\" is now also changed during the same frame. (In the old behavior, it is delayed by one frame.)\r\n●The sprite of an event with a tile can now also be changed by \"Change Character Sprite\" in \"Character\" of \"Effect\". (In the old behavior, the sprite of an event with a tile cannot be changed.)\r\n●Fixed a bug where the run state was stuck when \"Reserved\" and \"Confirm Key / Touch\" events were triggered in the same frame.\r\n●Fixed a bug where if the game was saved while talking to a map event, it remained the same direction after loading and cannot be restored.\r\n●Fixed a bug where the cursor width of a Choice is smaller than the character width when the character spacing was reduced by \\-[X], etc.\r\n●Fixed a bug where if a string picture is set to an empty string, its image size returned by Set Variable+ remained the previous value.\r\n●Fixed a bug where \"Passable (Tile & Event)\" of Set Variable+ was used for a 0.5x1 event, and only the head side was hit, not the foot side.\r\n●\"Get Type/Data/Field Number\" of DB Management now return -1 if a nonexistent name is specified. (In the old behavior, they return 0 after the error message.)\r\n  →  If you want to revert to the old behavior, set \"Adjust Game.exe Version\" to \"Old Version 3.390\" or earlier."
   11917, 	"Do you want to open the \"Key Code List\" page in your browser? (Japanese)\r\n\r\nhttps://smokingwolf.github.io/tool_wolf_rpg_editor/help/04ev_keyinput.html#keycode"
   11918, 	"In version <VER>, the data format of the core files changed,\r\nso backups were created in the \"AutoBackup_Before_Ver<VER>\" folder in the BasicData folder.\r\n(Game.dat, CommonEvent.dat, DataBases, TileSet.dat)\r\n\r\nNote: If you want to revert to an older EXE version, copy these backup files and overwrite the ones in the BasicData folder."
   11919, 	"Map Event Y's Self X / 1000000+10*Y+X"
@@ -6473,7 +6473,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   12219, 	"The file could not be opened."
   12220, 	"Caution: Usage Restrictions"
   12221, 	"- When reading or writing self variables in \"Read/Write Specific Save Data\",\r\n  use 1000000 or 15000000 (self variable of the specified event)\r\n  instead of 1100000 or 1600000 (self variable of this event).\r\n\r\n- XY-Arrays cannot be read or written in \"Read/Write Specific Save Data\"."
-  12222, 	"■Game.exe v3.668\r\n●Fixed a bug where the system variables \"Sys104/105: Map Scroll X/Y\" could only be set to unnatural ranges on looping maps, and a bug where they returned negative values under certain conditions. On maps with looping enabled, any values assigned to Sys104/105 now correctly reflect the scroll position, accounting for map looping.\r\n●Fixed a bug where inserting a line break immediately after the special character \\ay[Y] caused the line spacing to become 0.\r\n●Fixed a bug where the Image Height of a string picture containing the special character \\my[Y] or \\ay[Y] on the bottom line did not match its on-screen appearance.\r\n→ If scroll behavior, line spacing, or a picture's Image Height no longer behaves as intended, set \"Adjust Game.exe Version\" to \"Old Version 3.644\" or earlier."
+  12222, 	"■Game.exe v3.668\r\n●Fixed a bug where the system variables \"Sys104/105: Map Scroll X/Y\" could only be set to unnatural ranges on looping maps, and a bug where they returned negative values under certain conditions. On maps with looping enabled, any values assigned to Sys104/105 now correctly reflect the scroll position, accounting for map looping.\r\n●Fixed a bug where inserting a line break immediately after the special character \\ay[Y] caused the line spacing to become 0.\r\n●Fixed a bug where \"Image Height\" for a string picture containing the special character \\my[Y] or \\ay[Y] on the bottom line did not match its on-screen appearance.\r\n→ If scroll behavior, line spacing, or \"Image Height\" for string pictures no longer behaves as intended, set \"Adjust Game.exe Version\" to \"Old Version 3.644\" or earlier."
   12223, 	"v2: Clean Border / Darker Semi-Transparent;v1: Distorted Border / Normal / Filter Bug;"
 }
 
@@ -6487,7 +6487,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   12228, 	"Change Pattern (1-5)"
   12229, 	"Pattern 1-5"
   12230, 	"Play at 0% (Standard);Auto-Convert 0% to 100% (Old);"
-  12231, 	"■Game.exe v3.681\r\n●[Set Variable+/Picture] Fixed a bug where the \"Image Width\" of string pictures in Set Variable+ returns a value smaller than intended by the amount of character spacing if the string picture contains \"-[X]\" (character spacing) or if \"Horizontal Character Spacing\" in Basic Game Settings is set to 1 or higher.\r\n→ If the \"Image Width\" of string pictures no longer matches the intended width, set \"Adjust Game.exe Version\" to \"Old Version 3.668\" or earlier."
+  12231, 	"■Game.exe v3.681\r\n●[Set Variable+/Picture] Fixed a bug where \"Image Width\" for string pictures returned a value smaller than intended by the amount of character spacing if the string contained \"-[X]\" (character spacing) or if \"Horizontal Character Spacing\" in Basic Game Settings was set to 1 or higher.\r\n→ If \"Image Width\" for string pictures no longer matches the intended width, set \"Adjust Game.exe Version\" to \"Old Version 3.668\" or earlier."
   12232, 	"Enable Numpad 1/3/7/9 Movement (Standard);Disable Numpad 1/3/7/9 Movement (Old);"
 }
 
