@@ -5255,7 +5255,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11291, 	"No Event Exists"
   11292, 	"Ev%d: [ %s ]"
   11293, 	"●Label Point ["
-  11294, 	"] <<<<<<<<<<<<<<<<<<<<<<<<★"
+  11294, 	"] <<<<<<<<<<<<<<<<★"
   11295, 	"●Label Jump ["
 }
 
@@ -6487,7 +6487,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   12228, 	"Change Pattern (1-5)"
   12229, 	"Pattern 1-5"
   12230, 	"Play at 0% (Standard);Auto-Convert 0% to 100% (Old);"
-  12231, 	"■Game.exe v3.681\r\n●[Set Variable+/Picture] Fixed a bug where \"Image Width\" for string pictures returned a value smaller than intended by the amount of character spacing if the string contained \"-[X]\" (character spacing) or if \"Horizontal Character Spacing\" in Basic Game Settings was set to 1 or higher.\r\n→ If \"Image Width\" for string pictures no longer matches the intended width, set \"Adjust Game.exe Version\" to \"Old Version 3.668\" or earlier."
+  12231, 	"■Game.exe v3.685\r\n●[Set Variable+/Picture] Fixed a bug where \"Image Width\" for string pictures returned a value smaller than intended by the amount of character spacing if the string contained \"-[X]\" (character spacing) or if \"Horizontal Character Spacing\" in Basic Game Settings was set to 1 or higher.\r\n●[Set Variable+/Picture] Fixed a bug where \"Picture Horizontal/Vertical Divisions\" for a Simple Window picture returned the picture's size (it should always return 1).\r\n→ If \"Image Width\" or \"Horizontal/Vertical Divisions\" for string pictures no longer behaves as intended, set \"Adjust Game.exe Version\" to \"Old Version 3.668\" or earlier."
   12232, 	"Enable Numpad 1/3/7/9 Movement (Standard);Disable Numpad 1/3/7/9 Movement (Old);"
 }
 

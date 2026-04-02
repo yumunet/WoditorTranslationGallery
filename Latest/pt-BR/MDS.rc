@@ -456,7 +456,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 223, 87, 220, 77 
    CONTROL "", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 223, 13, 220, 77 
    CONTROL "", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 223, 236, 220, 77 
-   CONTROL "Ctrl+Alt+↑↓ Escolha", -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 2, 114, 88, 9 
+   CONTROL "Ctrl+Shift+↑↓ Escolha", -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 2, 114, 88, 9 
    CONTROL "Ctrl+↑↓ Mude de dados", -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 98, 307, 110, 9 
    CONTROL "Tab・Shift+Tab:\r\n  Escolha Campo \r\nCtrl+R:Tipo Anterior\r\nCtrl+Shift+R:\r\n  Dados Anterior", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 168, 338, 56, 53 , WS_EX_TRANSPARENT
    CONTROL "Dados[M\xFAlti.] (CSV)", 1424, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 52, 376, 71, 14 
@@ -3495,7 +3495,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   200, 	"ms(Para MIDI, tick)"
   201, 	"N\xE3o pode ser salvo o arquivo. \r\n\r\n*Check a autoriza\xE7\xE3o de acesso. \r\n*Se o dados est\xE1 numa pasta compartilhada, ser\xE1 provavelmente impossivel de gravar temporariamente."
   202, 	"Japon\xEAs(1)[Padr\xE3o];Ingl\xEAs(2);Europeu Ocidental(3);Chin\xEAs/Simplificado(4);Chin\xEAs/Tradicional(5);Coreia(6);"
-  203, 	"Exportar como TXT na pasta %s os Dados B\xE1sicos (Configura\xE7\xE3o de Básica do Jogo, DB, Mapa, CommonEv e Configura\xE7\xE3o de Tileset). \r\nVoc\xEA tem certeza?"
+  203, 	"Exportar como TXT na pasta %s os Dados B\xE1sicos (Configura\xE7\xE3o de Básica do Jogo, DB, CommonEv e Configura\xE7\xE3o de Tileset). \r\nVoc\xEA tem certeza?"
   204, 	"Exportado para TXT! \r\n\r\n[Arquivo .Auto.txt exportado]\r\n%s"
   205, 	"\r\n[Outros %d Arquivos (Todos %d Arquivos)]"
   206, 	"Importa o arquivo .Auto.txt da pasta \"%s\" \r\ne substituir os Dados B\xE1sicos (Configura\xE7\xE3o de Básica do Jogo, DB, CommonEv, Tile-Set). Voc\xEA tem certeza? \r\n\r\n*Este processamento pode intencionalmente importar arquivos que n\xE3o s\xE3o esperados \r\n Se não tiver certeza, confirme os conte\xFAdos um de cada vez ao arrastar e soltar na janela. "
@@ -4219,7 +4219,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   10500, 	"[Transforma\xE7\xE3o Livre] Direita, Baixo Y"
   10501, 	"N\xFAmero de Mapa"
   10502, 	"N\xFAmero do BGM (BGM selecionada no systemDB)"
-  10503, 	"N\xFAmero do BGM tocando (BGM selecionada no systemDB)"
+  10503, 	"N\xFAmero do BGS tocando (BGS selecionada no systemDB)"
   10504, 	"Valor de reprodu\xE7\xE3o do BGM atual (ms + at\xE9 o final da primeira volta / Em tick para Midi)"
   10505, 	"Valor de reprodu\xE7\xE3o do BGS atual (ms + at\xE9 o final da primeira volta)"
   10506, 	"Dura\xE7\xE3o do BGM atual (ms / Em tick para Midi)"
@@ -5254,15 +5254,15 @@ LANGUAGE LANG_JAPANESE, 0x1
   11290, 	"Ev%d: [ %s ] > P\xE1gina[%s]"
   11291, 	"Evento n\xE3o existe"
   11292, 	"Ev%d: [ %s ]"
-  11293, 	"●Ponto de entiqueta["
-  11294, 	"]  ＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜＜★"
-  11295, 	"●Pula entiqueta"
+  11293, 	"●Ponto de entiqueta ["
+  11294, 	"]  <<<<<<<<<<<<<<<<★"
+  11295, 	"●Pula entiqueta ["
 }
 
 STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
-  11296, 	"] Pula para   ＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞"
+  11296, 	"] Pula para   >>>>>>>>>>>>>>>>>>>>>>>>>"
   11297, 	"■Salvar Dados: "
   11298, 	"■Carregar Dados: "
   11299, 	"■Replay Dados: "
@@ -6487,7 +6487,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   12228, 	"パターン変更[1-5]"
   12229, 	"ﾊﾟﾀ1-5"
   12230, 	"音量0％のまま再生 (標準);音量0→100％に自動変換 (旧仕様);"
-  12231, 	"■Game.exe　Ver3.681\r\n●[変数操作+/ピクチャ] 「横方向の字詰め(ゲーム基本設定)」や「\\-[?](字詰め)」が含まれる文字列ピクチャの場合、[変数操作+]で得られる[ピクチャ]の「画像サイズ(横)」が字詰め分だけ小さい値になってしまうバグを修正\r\n→　もし文字列ピクチャの「画像サイズ(横)」が意図通りでなくなってしまった場合は、バージョン調整を「旧Ver3.668時点の挙動」以前に戻してください。"
+  12231, 	"■Game.exe　Ver3.685\r\n●[変数操作+/ピクチャ] 「横方向の字詰め(ゲーム基本設定)」や「\\-[?](字詰め)」が含まれる文字列ピクチャの場合、[変数操作+]で得られる[ピクチャ]の「画像サイズ(横)」が字詰め分だけ小さい値になってしまうバグを修正\r\n●[変数操作+/ピクチャ] お手軽ウィンドウの「ピクチャの横/縦分割数」でサイズが返されるバグ修正（正しくは常に1を返す）\r\n  →　もし文字列ピクチャの「画像サイズ(横)」や「横/縦分割数」が意図通りでなくなってしまった場合は、バージョン調整を「旧Ver3.668時点の挙動」以前に戻してください。"
   12232, 	"1379キー移動を有効化 (標準);1379キーで移動させない (旧仕様);"
 }
 
