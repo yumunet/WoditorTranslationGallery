@@ -117,7 +117,7 @@
 116:[RO] Screen Width
 117:[RO] Screen Height
 118:[RO] Tile Size
-119:[RO] Screen Resolution Multiplier (1x-3x)
+119:[RO] Screen Resolution Multiplier (1-3x)
 120:Reset Log (0:None/1:F12/2:Command)
 121: -----
 122:Smoothly Scale Zooming Map&Ev? (1:ON)[α]
