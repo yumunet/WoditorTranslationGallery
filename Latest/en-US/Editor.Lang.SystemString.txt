@@ -80,7 +80,7 @@
 79:[RO] Game Name (Main)
 80:[RO] Game Name (Extra)
 81: -----
-82: -----
+82:[RO] Last Performance Monitor Output
 83: -----
 84: -----
 85: -----

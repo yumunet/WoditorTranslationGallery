@@ -242,18 +242,19 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1259, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 11, 135, 34, 14 
    CONTROL "", 1015, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 29, 142, 9, 14 
    CONTROL "■文章の\r\n強制中断", 1038, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 201, 130, 38, 20 
-   CONTROL "?", 1904, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 89, 158, 10, 9 
-   CONTROL "ValWatch", 1905, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 103, 158, 43, 10 
-   CONTROL "PictureWatch", 1906, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 149, 158, 52, 10 
-   CONTROL "MoveWatch", 1908, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 202, 158, 52, 10 
-   CONTROL "", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 3, 212, 10 
+   CONTROL "?", 1904, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 50, 160, 10, 9 
+   CONTROL "ValWatch", 1905, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 64, 160, 43, 10 
+   CONTROL "PictureWatch", 1906, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 108, 160, 52, 10 
+   CONTROL "MoveWatch", 1908, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 161, 160, 47, 10 
+   CONTROL "※1行目に @数字 と半角入力するとｼｽﾃﾑ変数Sys0(顔番号)を変更可", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 5, 212, 10 
    CONTROL "※ここに顔番号と文字色の内容が表示されます", 1330, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 48, 134, 127, 19 , WS_EX_STATICEDGE
    CONTROL "顔変更ｺﾏﾝﾄﾞ挿入", 1229, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 254, 5, 11, 13 
    CONTROL "顔番号確認(SysDB 24から読込) / 文字色確認(SysDB 12)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 8, 125, 192, 31 
-   CONTROL "※1行目に @数字 と半角入力するとｼｽﾃﾑ変数0(顔番号)を変更可", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 7, 209, 11 
+   CONTROL "デバッグ文用", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 161, 48, 11 
    CONTROL "1　　2　　3　　4　　5　　6　　7　　8　　9　　10 　11 　12 　13 　14 　15 ", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 21, 192, 8 
    CONTROL "デバッグ文", 1070, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 212, 93, 37, 15 
    CONTROL "", 1907, STATIC, SS_OWNERDRAW | WS_CHILD | WS_VISIBLE, 180, 135, 16, 15 
+   CONTROL "Performance", 1909, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 209, 160, 48, 10 
 }
 
 133 DIALOGEX 400, 0, 160, 292
@@ -5938,7 +5939,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11809, 	"データ更新"
   11810, 	"・ラベルで【上記以外の場合】分岐がある【条件分岐】の【1】～【4】分岐内にジャンプすると、\r\n 分岐内の処理が終わった時点で次に【上記以外の場合】の分岐に飛んでしまいます！\r\n 条件分岐の中にラベルジャンプする際には注意してください。\r\n（処理高速化の都合でこうなっています）"
   11811, 	"【ラベル機能の注意点！】"
-  11812, 	"以下のようなコマンドで「デバッグ文」を入力すると、　　　　　　\r\nゲーム実行時「デバッグウィンドウ」内に情報が表示されます。\r\n（大文字小文字も正確に、1行だけ入力します）\r\n\r\nValWatch:ON=2000009\r\n→　実行後、通常変数9(2000009)の値を監視し、\r\n　　アクセスされた後の値を表示します\r\n\r\nPictureWatch:ON=123\r\n → 実行後、ピクチャ123を監視し、\r\n　そのIDにピクチャ処理が行われたときに\r\n　情報を表示します\r\n\r\nMoveWatch:ON=-2\r\n → 実行後、主人公(-2)を監視し、\r\n　そのマップイベントIDに動作指定が行われたときに\r\n　情報を表示します。0以上ならマップイベントが対象です"
+  11812, 	"以下のようなコマンドで「デバッグ文」を入力すると、　　　　　　\r\nゲーム実行時「デバッグウィンドウ」内に情報が表示されます。\r\n（大文字小文字も正確に、1行だけ入力します）\r\n\r\nValWatch:ON=2000009\r\n→　実行後、通常変数9(2000009)の値を監視し、\r\n　　アクセスされた後の値を表示します\r\n\r\nPictureWatch:ON=123\r\n → 実行後、ピクチャ123を監視し、\r\n　そのIDにピクチャ処理が行われたときに\r\n　情報を表示します\r\n\r\nMoveWatch:ON=-2\r\n → 実行後、主人公(-2)を監視し、\r\n　そのマップイベントIDに動作指定が行われたときに\r\n　情報を表示します。0以上ならマップイベントが対象です\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n → 実行後、「1」フレームごとに\r\n　負荷上位「10」位までのイベントリストと\r\n　かかった処理時間を表示します。\r\n　FRAMEを増やすと表示頻度が減り、\r\n　その間の処理時間が合算されて表示されます。\r\n → ONをON2にするとデバッグウィンドウで表示されなくなります。\r\n　（システム文字列 SysS82 でのみ取得できます）\r\n → ※負荷が高くなるので作品公開時には切ることを推奨"
   11813, 	"【「デバッグ文」コマンドの裏技】"
   11814, 	"データがこのバージョンより新しいプロテクトで\r\n保護されているようで読み込めませんでした。\r\n\r\nEditorを最新版にしてください。"
   11815, 	"■Game.exe　Ver3.310\r\n　●「トランジション準備」中に「ウェイト」をしても待ち時間が発生しなくなることがあったバグを修正。\r\n　前の挙動に合わせて作っていた場合は、バージョン調整を「旧Ver3.300時点の挙動」以前にすると「トランジション準備」中のウェイトがほぼ無効になるよう戻せます。\r\n　●「ピクセル移動」がβ仕様になりました。古いα版の「ピクセル移動」は「4方向画像使用時では方向転換とアニメーションが効かない」「8方向画像使用時は方向転換とアニメーションが有効」、「4方向・8方向画像どちらでもT・TXキャラクター画像はアニメーションしない」となっており、バージョン調整を「旧Ver3.300時点の挙動」以前にするとその仕様に戻せます。"
