@@ -242,18 +242,19 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1259, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 11, 135, 34, 14 
    CONTROL "", 1015, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 29, 142, 9, 14 
    CONTROL "■Force Close Message", 1038, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 201, 130, 46, 21 
-   CONTROL "?", 1904, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 87, 158, 12, 10 
-   CONTROL "ValWatch", 1905, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 103, 158, 43, 10 
-   CONTROL "PictureWatch", 1906, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 149, 158, 52, 10 
-   CONTROL "MoveWatch", 1908, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 202, 158, 52, 10 
-   CONTROL "", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 3, 212, 10 
+   CONTROL "?", 1904, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 50, 160, 10, 9 
+   CONTROL "ValWatch", 1905, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 64, 160, 43, 10 
+   CONTROL "PictureWatch", 1906, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 108, 160, 52, 10 
+   CONTROL "MoveWatch", 1908, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 161, 160, 47, 10 
+   CONTROL "Tip: Use @NUMBER on first line to change Sys0 (Portrait Number)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 5, 212, 10 
    CONTROL "Portrait Number and Text Color information is displayed here.", 1330, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 48, 135, 127, 19 , WS_EX_STATICEDGE
    CONTROL "Insert Portrait Change Command", 1229, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 254, 5, 11, 13 
    CONTROL "Reference: Portrait Number (SysDB 24) / Text Color (SysDB 12)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 8, 125, 192, 31 
-   CONTROL "Tip: Use @NUMBER on first line to change Sys0 (Portrait Number)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 7, 209, 11 
+   CONTROL "Debug Text", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 161, 48, 11 
    CONTROL "1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 20, 222, 9 
    CONTROL "Debug Text", 1070, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 93, 41, 15 
    CONTROL "", 1907, STATIC, SS_OWNERDRAW | WS_CHILD | WS_VISIBLE, 180, 136, 16, 15 
+   CONTROL "Performance", 1909, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 209, 160, 48, 10 
 }
 
 133 DIALOGEX 400, 0, 160, 292
@@ -2742,7 +2743,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Strings in Commands", 1284, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 6, 107, 148, 12 
    CONTROL "Variables/Values in Commands\r\n (Unstable as it catches internal values)", 1285, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 6, 119, 148, 20 
    CONTROL "Common Event Names", 1286, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 6, 139, 148, 10 
-   CONTROL "Search Range", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 2, 157, 147, 36 
+   CONTROL "Search Scope", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 2, 157, 147, 36 
    CONTROL "Current Event Only", 1599, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 168, 138, 11 
    CONTROL "All Events (Search across Events)", 1598, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 8, 179, 138, 11 
    CONTROL "Search For:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 9, 36, 9 
@@ -4285,7 +4286,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   10551, 	"This feature is not available in the free version."
   10552, 	"Error"
   10553, 	"Cannot create game data in the current development folder."
-  10554, 	"Processing aborted.\r\n\r\n(\"Attempted an Unsupported Operation\"\r\nmay appear when you run it next time, but you can ignore it because the process can be executed)"
+  10554, 	"Processing aborted.\r\n\r\n(\"Attempted an unsupported operation.\" may appear when you run it next time, but you can ignore it because the process can be executed)"
   10555, 	"Game data created successfully!\r\n\r\nNote: The created game data folder may not be visible. If this happens, try pressing F5 (Refresh) in the location where the game data folder should appear."
   10556, 	"Select the folder to output the data to."
   10557, 	"Select a target folder."
@@ -5938,7 +5939,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11809, 	"Update data"
   11810, 	"If a jump-to-label command targets a label that is in branches 1-4 of Condition (Number)\r\nthat include an \"Else\" case, execution will move to the \"Else\" branch after the targeted\r\nbranch finishes.\r\nPlease be careful when using jump-to-label commands that target labels in Condition\r\nbranches. (This behavior is for processing speed optimizations.)"
   11811, 	"Caution: Label Function"
-  11812, 	"If you enter a Debug Text using the following commands, the information\r\nwill be displayed in the \"Debug Window\" during gameplay.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it has been updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture operation is performed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is executed on the leader.\r\n    If the value is 0 or greater, the map event with that ID\r\n    will be monitored instead."
+  11812, 	"If you enter a Debug Text using the following commands, the information\r\nwill be displayed in the \"Debug Window\" during gameplay.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it has been updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture-related command is executed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is executed on the leader.\r\n    If the value is 0 or greater, the map event with that ID\r\n    will be monitored instead.\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n   Displays a list of the top 10 highest-load events (TOP) and their\r\n   processing times, updated every 1 frame (FRAME).\r\n   Increasing the \"FRAME\" value reduces the update frequency, and the\r\n   processing times during that period are added together.\r\n   Setting \"ON\" to \"ON2\" disables display in the Debug Window. (The\r\n   output can only be retrieved via the System String SysS82.)\r\n   Note: This feature increases processing load. It is recommended to\r\n   turn it off when releasing your project."
   11813, 	"Debug Text Command Tips"
   11814, 	"The data could not be loaded because it is protected by a newer version of the protection.\r\n\r\nPlease update Editor to the latest version."
   11815, 	"■Game.exe v3.310\r\n  ●Fixed a bug where waiting time did not occur when \"Wait\" was executed during \"Prepare Transition\".\r\n  If you want to revert to the old behavior, set \"Adjust Game.exe Version\" to \"Old Version 3.300\" (\"Wait\" during \"Prepare Transition\" will be almost disabled).\r\n  ●Pixel Movement is now in beta. In the old alpha version of Pixel Movement, direction changes and animations did not work with 4-way sprites, but did work with 8-way sprites, and T/TX character sprites did not animate with either 4-way or 8-way sprites.\r\n  You can revert to that behavior by setting \"Adjust Game.exe Version\" to \"Old Version 3.300\" or earlier."

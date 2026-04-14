@@ -242,18 +242,19 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1259, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 11, 135, 34, 14 
    CONTROL "", 1015, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 29, 142, 9, 14 
    CONTROL "■Interromper Mensagem", 1038, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 209, 129, 46, 28 
-   CONTROL "?", 1904, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 89, 158, 10, 9 
-   CONTROL "ValWatch", 1905, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 103, 158, 43, 10 
-   CONTROL "PictureWatch", 1906, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 149, 158, 52, 10 
-   CONTROL "MoveWatch", 1908, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 202, 158, 52, 10 
-   CONTROL "", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 3, 212, 10 
+   CONTROL "?", 1904, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 50, 160, 10, 9 
+   CONTROL "ValWatch", 1905, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 64, 160, 43, 10 
+   CONTROL "PictureWatch", 1906, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 108, 160, 52, 10 
+   CONTROL "MoveWatch", 1908, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 161, 160, 47, 10 
+   CONTROL "*@N\xFAmero na primeira linha para mudar retrato (SysDB 0)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 5, 212, 10 
    CONTROL "*Exibe informação de cor de fonte e número de retrato.", 1330, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 48, 135, 135, 19 , WS_EX_STATICEDGE
    CONTROL "Inserir Comando de Mudan\xE7a de Retrato", 1229, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 254, 5, 11, 13 
    CONTROL "N\xFAmero de retrato (SysDB 24) / Cor do texto (SysDB 12)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 8, 125, 200, 31 
-   CONTROL "*@N\xFAmero na primeira linha para mudar retrato (SysDB 0)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 7, 209, 11 
+   CONTROL "デバッグ文用", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 161, 48, 11 
    CONTROL "1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20   21", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 20, 232, 9 
    CONTROL "Texto de Debug", 1070, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 93, 57, 15 
    CONTROL "", 1907, STATIC, SS_OWNERDRAW | WS_CHILD | WS_VISIBLE, 188, 136, 16, 15 
+   CONTROL "Performance", 1909, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 209, 160, 48, 10 
 }
 
 133 DIALOGEX 400, 0, 160, 292
@@ -5938,7 +5939,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11809, 	"Atualizar dados"
   11810, 	"- Se pular para o rotulo dentro do ramo 1 at\xE9 4 do \"Condi\xE7\xE3o(N\xFAmero)\" que tenha \"Else\",\r\n o processo ir\xE1 pular para \"Else\" quando o processamento daquele ramo \xE9 completado!\r\n Tenha cuidado quando pular para o rotulo dentro do ramo de condi\xE7\xE3o.\r\n (Feito para otimizar processo.)"
   11811, 	" [Fun\xE7\xE3o importante da rotulo!] "
-  11812, 	"Se inserir o Debug no Comando a seguir, s\xE3o mostrada as Informa\xE7\xE3o na \"Janela de Debug\" durante a execu\xE7\xE3o do jogo. \r\n (Entra apenas 1 linha de cada vez, corretamente letras capitalizada e minuscula) \r\n\r\nValWatch:ON=2000009\r\n→Depois da execu\xE7\xE3o, obter o valor da vari\xE1vel normal 9 (2000009),\r\n    visualiza o valor depois de ser acessado.\r\n\r\nPictureWatch:ON=123 Depois da execu\xE7\xE3o, observa a imagem 123, \r\n visualiza as exatas informa\xE7\xF5es ao fazer o processamento de imagem neste ID.\r\n\r\nMoveWatch:ON=-2\r\n → Depois da execução, exibe informação de ações feitas pelo o Líder (-2) e pelo evento de mapa (Maior ou igual que 0)."
+  11812, 	"Se inserir o Debug no Comando a seguir, s\xE3o mostrada as Informa\xE7\xE3o na \"Janela de Debug\" durante a execu\xE7\xE3o do jogo. \r\n (Entra apenas 1 linha de cada vez, corretamente letras capitalizada e minuscula) \r\n\r\nValWatch:ON=2000009\r\n→Depois da execu\xE7\xE3o, obter o valor da vari\xE1vel normal 9 (2000009),\r\n    visualiza o valor depois de ser acessado.\r\n\r\nPictureWatch:ON=123 Depois da execu\xE7\xE3o, observa a imagem 123, \r\n visualiza as exatas informa\xE7\xF5es ao fazer o processamento de imagem neste ID.\r\n\r\nMoveWatch:ON=-2\r\n → Depois da execução, exibe informação de ações feitas pelo o Líder (-2) e pelo evento de mapa (Maior ou igual que 0).\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n → 実行後、「1」フレームごとに\r\n　負荷上位「10」位までのイベントリストと\r\n　かかった処理時間を表示します。\r\n　FRAMEを増やすと表示頻度が減り、\r\n　その間の処理時間が合算されて表示されます。\r\n → ONをON2にするとデバッグウィンドウで表示されなくなります。\r\n　（システム文字列 SysS82 でのみ取得できます）\r\n → ※負荷が高くなるので作品公開時には切ることを推奨"
   11813, 	" [Truque de texto de debug] "
   11814, 	"Dados \xE9 protegido por uma vers\xE3o mais nova e n\xE3o pode ser lido. \r\n\r\nPor favor tenha a ult\xEDma vers\xE3o do Editor."
   11815, 	"■Game.exe v3.310\r\n  ●Corrigido bug onde o tempo de espera n\xE3o ocorria quando \"Esperar\" era executado durante \"Preparar transi\xE7\xE3o\".\r\n   Para mudar como era antes, ajuste o comportamento para a vers\xE3o \"3.300\" (\"Esperar\" durante \"Preparar transi\xE7\xE3o\" ser\xE1 quase desativado).\r\n  ●Movimento por Pixel agora \xE9 βeta. Na vers\xE3o αlpha, as mudan\xE7as de dire\xE7\xF5es e anima\xE7\xE3os n\xE3o funcionava na imagem de 4 dire\xE7\xF5es, mas funcionava na imagem de 8 dire\xE7\xF5es e a imagem de personagem T/TX n\xE3o animava tanto em 4 e 8 dire\xE7\xF5es.\r\n  Para mudar como era antes, ajuste o comportamento para a vers\xE3o \"3.300\" ou anterior. "
