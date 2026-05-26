@@ -68,6 +68,7 @@ LANGUAGE LANG_JAPANESE, 0x1
     MENUITEM "&Manual (JPN)",  32861
     MENUITEM "Guia Perfeito (JPN)",  32872
     MENUITEM "Log de alteração de comportamentos",  33073
+    MENUITEM "スタートガイドを開く",  33115
   }
 }
 
@@ -1445,39 +1446,39 @@ FONT 9, "MS Shell Dlg"
    CONTROL "(\\s[?],\\v[?]s\xE3o aceito)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 134, 158, 75, 9 
 }
 
-152 DIALOGEX 0, 0, 471, 262
+152 DIALOGEX 0, 0, 471, 279
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Configura\xE7\xE3o de Mapa"
 LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
-   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 234, 50, 21 
-   CONTROL "Cancelar", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 234, 50, 21 
-   CONTROL "", 1296, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 47, 105, 42, 12 
-   CONTROL "", 1297, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 70, 107, 11, 11 
-   CONTROL "Tamanho do Mapa", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 95, 207, 83 
-   CONTROL "Largura", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 107, 24, 9 
-   CONTROL "", 1298, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 119, 105, 42, 12 
-   CONTROL "", 1299, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 148, 108, 11, 11 
-   CONTROL "Altura", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 97, 107, 19, 9 
-   CONTROL "", 1300, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 28, 195, 149, 131 
-   CONTROL "Tileset", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 184, 196, 30 
-   CONTROL "Registrar Mapa (Tipo 0: Configura\xE7\xE3o de mapa)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 45, 222, 49 
-   CONTROL "Mudar", 1289, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 181, 45, 40, 10 
-   CONTROL "", 1304, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 48, 60, 100, 131 
-   CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 58, 74, 84, 13 
-   CONTROL "┗ Nome (*)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 76, 39, 9 
+   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 251, 50, 21 
+   CONTROL "Cancelar", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 251, 50, 21 
+   CONTROL "", 1296, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 47, 119, 42, 12 
+   CONTROL "", 1297, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 70, 121, 11, 11 
+   CONTROL "Tamanho do Mapa", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 109, 207, 83 
+   CONTROL "Largura", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 121, 24, 9 
+   CONTROL "", 1298, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 119, 119, 42, 12 
+   CONTROL "", 1299, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 148, 122, 11, 11 
+   CONTROL "Altura", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 97, 121, 19, 9 
+   CONTROL "", 1300, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 28, 209, 149, 131 
+   CONTROL "Tileset", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 198, 196, 30 
+   CONTROL "Registrar Mapa (Tipo 0: Configura\xE7\xE3o de mapa)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 59, 222, 49 
+   CONTROL "Mudar", 1289, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 181, 59, 40, 10 
+   CONTROL "", 1304, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 48, 74, 100, 131 
+   CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 58, 88, 84, 13 
+   CONTROL "┗ Nome (*)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 90, 39, 9 
    CONTROL "", 1305, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 265, 57, 131, 131 
    CONTROL "", 1306, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 265, 109, 131, 131 
    CONTROL "Arquivo", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 238, 164, 24, 9 
-   CONTROL "Configura\xE7\xE3o de Loop (*)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 162, 78, 9 
-   CONTROL "", 1307, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 99, 161, 76, 131 
-   CONTROL "Nome do Arquivo", 1415, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 15, 215, 28 
+   CONTROL "Configura\xE7\xE3o de Loop (*)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 176, 78, 9 
+   CONTROL "", 1307, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 99, 175, 76, 131 
+   CONTROL "Nome do Arquivo", 1415, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 15, 215, 37 
    CONTROL "", 1418, COMBOBOX, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 14, 26, 80, 186 
    CONTROL "/", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 97, 29, 8, 9 
    CONTROL "", 1259, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 103, 26, 91, 13 
    CONTROL ".mps", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 198, 29, 17, 9 
-   CONTROL "Slot (*)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 61, 31, 9 
+   CONTROL "Slot (*)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 75, 31, 9 
    CONTROL " ◆ Mapas novos devem ser registrado no System Database para serem usado no jogo.", 1977, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 3, 453, 10 , WS_EX_STATICEDGE
    CONTROL "Arquivo", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 238, 111, 24, 9 
    CONTROL "", 1308, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 265, 162, 131, 131 
@@ -1525,10 +1526,11 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1582, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 265, 162, 111, 12 
    CONTROL "Usar", 1583, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 296, 149, 45, 10 
    CONTROL "Mapa anterior", 1584, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 347, 149, 57, 10 
-   CONTROL "Est\xE1tico", 1961, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 119, 194, 41 
-   CONTROL "*Não mude o \"Slot\", OK em alterar o \"Nome\" (Exibido na Seleção de Mapa).", 1978, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 152, 56, 78, 36 , WS_EX_STATICEDGE
+   CONTROL "Est\xE1tico", 1961, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 133, 194, 41 
+   CONTROL "*Não mude o \"Slot\", OK em alterar o \"Nome\" (Exibido na Seleção de Mapa).", 1978, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 152, 70, 78, 36 , WS_EX_STATICEDGE
    CONTROL "(*)が付いている項目は「システムデータベース」内に保存される情報です。\r\nそれ以外の情報はマップファイル(.mps)内に保存されています。", 1979, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 241, 18, 211, 20 , WS_EX_STATICEDGE
-   CONTROL "Um novo Mapa será criado com as op\xE7\xF5es acimas.", 1980, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 142, 216, 164, 15 , WS_EX_STATICEDGE
+   CONTROL "Um novo Mapa será criado com as op\xE7\xF5es acimas.", 1980, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 142, 233, 164, 15 , WS_EX_STATICEDGE
+   CONTROL "※ファイル名は「半角英数字・半角記号」のみにするのが安全です！", 1981, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 40, 206, 11 , WS_EX_STATICEDGE
 }
 
 153 DIALOGEX 0, 200, 1145, 830
@@ -2054,13 +2056,13 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1062, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 401, 29, 92, 13 
    CONTROL "", 1063, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 401, 43, 92, 13 
    CONTROL "Sub-Fonte 1", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 351, 31, 48, 9 
-   CONTROL "Sub-Fonte 2", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 351, 43, 48, 9 
+   CONTROL "Sub-Fonte 2", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 351, 44, 48, 9 
    CONTROL "", 1064, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 401, 57, 92, 13 
    CONTROL "Sub-Fonte 3", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 351, 58, 48, 9 
    CONTROL "Registrar licen\xE7a", 1416, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_DISABLED | WS_TABSTOP, 618, 275, 28, 7 
-   CONTROL "Sprite de personagem inicial (Líder)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 284, 190, 45 
-   CONTROL "", 1065, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 14, 294, 155, 13 
-   CONTROL "...", 1419, BUTTON, BS_PUSHBUTTON | BS_FLAT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 172, 294, 21, 12 
+   CONTROL "Sprite de personagem inicial (Líder)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 284, 201, 45 
+   CONTROL "", 1065, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 14, 294, 167, 13 
+   CONTROL "...", 1419, BUTTON, BS_PUSHBUTTON | BS_FLAT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 184, 294, 21, 12 
    CONTROL "Anti-Aliasing da fonte", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 348, 91, 146, 22 
    CONTROL "ON", 1375, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 368, 100, 29, 10 
    CONTROL "OFF", 1376, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 398, 100, 31, 10 
@@ -2070,7 +2072,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Líder/Seguidores", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 240, 175, 49, 9 
    CONTROL "", 1485, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 245, 185, 43, 103 
    CONTROL "", 1486, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 291, 185, 42, 103 
-   CONTROL "*N\xE3o faz nada quando usar o Sistema Base. Crie aliados no VarDB 6.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 308, 179, 19 , WS_EX_STATICEDGE
+   CONTROL "※基本ｼｽﾃﾑ使用時はこの設定は無視されます。\r\n 　可変DBﾀｲﾌﾟ6でﾊﾟｰﾃｨｰ設定、ﾀｲﾌﾟ0で画像設定してください", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 11, 308, 197, 19 , WS_EX_STATICEDGE
    CONTROL "M\xE9todo de escala de Imagem", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 242, 33, 97, 49 
    CONTROL "Comportamento de Janela Inativo", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 231, 88, 110, 52 
    CONTROL "Distinto e duro [Padr\xE3o]", 1614, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP, 249, 44, 84, 17 
@@ -3370,6 +3372,21 @@ FONT 9, "MS Shell Dlg"
    CONTROL "SDB", 1747, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 128, 198, 20, 12 
    CONTROL "<", 1632, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 108, 122, 11, 13 
    CONTROL ">", 1633, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 131, 123, 11, 13 
+}
+
+1678 DIALOGEX 0, 0, 269, 136
+STYLE DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "スタートガイド"
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Shell Dlg"
+{
+   CONTROL 1688, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 92, 5, 18, 18 
+   CONTROL "", 1981, LISTBOX, LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 7, 15, 79, 100 
+   CONTROL "TITLE", 1979, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 115, 8, 143, 12 , WS_EX_STATICEDGE
+   CONTROL "TIPS", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 5, 16, 8 
+   CONTROL "↑ 前へ", 1982, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 117, 37, 17 
+   CONTROL "次へ ↓", 1983, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 46, 117, 37, 17 
+   CONTROL "", 1984, EDIT, ES_LEFT | ES_MULTILINE | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 89, 24, 175, 110 , WS_EX_CLIENTEDGE
 }
 
 30721 DIALOG 9, 26, 183, 70
@@ -5939,7 +5956,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11809, 	"Atualizar dados"
   11810, 	"- Se pular para o rotulo dentro do ramo 1 at\xE9 4 do \"Condi\xE7\xE3o(N\xFAmero)\" que tenha \"Else\",\r\n o processo ir\xE1 pular para \"Else\" quando o processamento daquele ramo \xE9 completado!\r\n Tenha cuidado quando pular para o rotulo dentro do ramo de condi\xE7\xE3o.\r\n (Feito para otimizar processo.)"
   11811, 	" [Fun\xE7\xE3o importante da rotulo!] "
-  11812, 	"Se inserir o Debug no Comando a seguir, s\xE3o mostrada as Informa\xE7\xE3o na \"Janela de Debug\" durante a execu\xE7\xE3o do jogo. \r\n (Entra apenas 1 linha de cada vez, corretamente letras capitalizada e minuscula) \r\n\r\nValWatch:ON=2000009\r\n→Depois da execu\xE7\xE3o, obter o valor da vari\xE1vel normal 9 (2000009),\r\n    visualiza o valor depois de ser acessado.\r\n\r\nPictureWatch:ON=123 Depois da execu\xE7\xE3o, observa a imagem 123, \r\n visualiza as exatas informa\xE7\xF5es ao fazer o processamento de imagem neste ID.\r\n\r\nMoveWatch:ON=-2\r\n → Depois da execução, exibe informação de ações feitas pelo o Líder (-2) e pelo evento de mapa (Maior ou igual que 0).\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n → 実行後、「1」フレームごとに\r\n　負荷上位「10」位までのイベントリストと\r\n　かかった処理時間を表示します。\r\n　FRAMEを増やすと表示頻度が減り、\r\n　その間の処理時間が合算されて表示されます。\r\n → ONをON2にするとデバッグウィンドウで表示されなくなります。\r\n　（システム文字列 SysS82 でのみ取得できます）\r\n → ※負荷が高くなるので作品公開時には切ることを推奨"
+  11812, 	"Se inserir o Debug no Comando a seguir, s\xE3o mostrada as Informa\xE7\xE3o na \"Janela de Debug\" durante a execu\xE7\xE3o do jogo. \r\n (Entra apenas 1 linha de cada vez, corretamente letras capitalizada e minuscula) \r\n\r\nValWatch:ON=2000009\r\n→Depois da execu\xE7\xE3o, obter o valor da vari\xE1vel normal 9 (2000009),\r\n    visualiza o valor depois de ser acessado.\r\n\r\nPictureWatch:ON=123 Depois da execu\xE7\xE3o, observa a imagem 123, \r\n visualiza as exatas informa\xE7\xF5es ao fazer o processamento de imagem neste ID.\r\n\r\nMoveWatch:ON=-2\r\n → Depois da execução, exibe informação de ações feitas pelo o Líder (-2) e pelo evento de mapa (Maior ou igual que 0).\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n → 実行後、「1」フレームごとに\r\n　負荷上位「10」位までのイベントリストと\r\n　かかった処理時間を表示します。\r\n　FRAMEを増やすと表示頻度が減り、\r\n　その間の処理時間が合算されて表示されます。\r\n → ONをON2にするとデバッグウィンドウで表示されなくなります。\r\n　（システム文字列 SysS82 でのみ取得できます）\r\n → 「:OVER=1.0」を追加すると1.0ms以上のものだけ表示\r\n → 「:NO_TITLE」を追加すると先頭行を非表示に\r\n → ※負荷が高くなるので作品公開時には切ることを推奨"
   11813, 	" [Truque de texto de debug] "
   11814, 	"Dados \xE9 protegido por uma vers\xE3o mais nova e n\xE3o pode ser lido. \r\n\r\nPor favor tenha a ult\xEDma vers\xE3o do Editor."
   11815, 	"■Game.exe v3.310\r\n  ●Corrigido bug onde o tempo de espera n\xE3o ocorria quando \"Esperar\" era executado durante \"Preparar transi\xE7\xE3o\".\r\n   Para mudar como era antes, ajuste o comportamento para a vers\xE3o \"3.300\" (\"Esperar\" durante \"Preparar transi\xE7\xE3o\" ser\xE1 quase desativado).\r\n  ●Movimento por Pixel agora \xE9 βeta. Na vers\xE3o αlpha, as mudan\xE7as de dire\xE7\xF5es e anima\xE7\xE3os n\xE3o funcionava na imagem de 4 dire\xE7\xF5es, mas funcionava na imagem de 8 dire\xE7\xF5es e a imagem de personagem T/TX n\xE3o animava tanto em 4 e 8 dire\xE7\xF5es.\r\n  Para mudar como era antes, ajuste o comportamento para a vers\xE3o \"3.300\" ou anterior. "
@@ -6490,6 +6507,13 @@ LANGUAGE LANG_JAPANESE, 0x1
   12230, 	"音量0％のまま再生 (標準);音量0→100％に自動変換 (旧仕様);"
   12231, 	"■Game.exe　Ver3.685\r\n●[変数操作+/ピクチャ] 「横方向の字詰め(ゲーム基本設定)」や「\\-[?](字詰め)」が含まれる文字列ピクチャの場合、[変数操作+]で得られる[ピクチャ]の「画像サイズ(横)」が字詰め分だけ小さい値になってしまうバグを修正\r\n●[変数操作+/ピクチャ] お手軽ウィンドウの「ピクチャの横/縦分割数」でサイズが返されるバグ修正（正しくは常に1を返す）\r\n  →　もし文字列ピクチャの「画像サイズ(横)」や「横/縦分割数」が意図通りでなくなってしまった場合は、バージョン調整を「旧Ver3.668時点の挙動」以前に戻してください。"
   12232, 	"1379キー移動を有効化 (標準);1379キーで移動させない (旧仕様);"
+  12233, 	"■Game.exe　Ver3.692\r\n●[動作指定/一時消去] 「動作指定」中のイベントが「一時消去」されたあとも動作し続けてしまうバグを修正\r\n●[DB操作] タイプやデータが存在しないエラーが期待通り出なかった問題を修正\r\n  →　もしこれらの仕様を使用していて挙動が意図通りでなくなってしまった場合や、予期しないDBエラーが出てしまう場合は、バージョン調整を「旧Ver3.685時点の挙動」以前に戻してください。"
+  12234, 	"元に戻す(&U)\tCtrl+Z"
+  12235, 	"切り取り(&T)\tCtrl+X"
+  12236, 	"コピー(&C)\tCtrl+C"
+  12237, 	"貼り付け(&V)\tCtrl+V"
+  12238, 	"削除(&D)\tDel"
+  12239, 	"全て選択(&A)\tCtrl+A"
 }
 
 STRINGTABLE
