@@ -68,6 +68,7 @@ LANGUAGE LANG_JAPANESE, 0x1
     MENUITEM "WOLF RPG Editor &Manual (JP)",  32861
     MENUITEM "Perfect Guide Site (JP)",  32872
     MENUITEM "Behavior Change Log",  33073
+    MENUITEM "Open Start Guide",  33115
   }
 }
 
@@ -1445,39 +1446,39 @@ FONT 9, "MS Shell Dlg"
    CONTROL "(\\s[X],\\v[X] allowed)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 120, 158, 66, 9 
 }
 
-152 DIALOGEX 0, 0, 471, 262
+152 DIALOGEX 0, 0, 471, 279
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Change Map Settings"
 LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
-   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 234, 50, 21 
-   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 234, 50, 21 
-   CONTROL "", 1296, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 44, 105, 42, 12 
-   CONTROL "", 1297, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 70, 107, 11, 11 
-   CONTROL "Map Size", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 95, 207, 87 
-   CONTROL "Width:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 107, 21, 9 
-   CONTROL "", 1298, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 121, 105, 42, 12 
-   CONTROL "", 1299, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 148, 108, 11, 11 
-   CONTROL "Height:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 96, 107, 22, 9 
-   CONTROL "", 1300, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 28, 195, 149, 131 
-   CONTROL "Tileset", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 184, 196, 30 
-   CONTROL "Register to System DB (Type 0: Map Settings)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 45, 216, 48 
-   CONTROL "Change", 1289, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 178, 45, 40, 10 
-   CONTROL "", 1304, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 48, 60, 100, 131 
-   CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 58, 74, 84, 13 
-   CONTROL "┗ Name (*):", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 76, 39, 9 
+   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 251, 50, 21 
+   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 228, 251, 50, 21 
+   CONTROL "", 1296, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 44, 119, 42, 12 
+   CONTROL "", 1297, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 70, 121, 11, 11 
+   CONTROL "Map Size", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 109, 207, 87 
+   CONTROL "Width:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 20, 121, 21, 9 
+   CONTROL "", 1298, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 121, 119, 42, 12 
+   CONTROL "", 1299, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 148, 122, 11, 11 
+   CONTROL "Height:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 96, 121, 22, 9 
+   CONTROL "", 1300, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 28, 209, 149, 131 
+   CONTROL "Tileset", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 198, 196, 30 
+   CONTROL "Register to System DB (Type 0: Map Settings)", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 59, 216, 49 
+   CONTROL "Change", 1289, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 178, 59, 40, 10 
+   CONTROL "", 1304, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 48, 74, 100, 131 
+   CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 58, 88, 84, 13 
+   CONTROL "┗ Name (*):", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 90, 39, 9 
    CONTROL "", 1305, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 258, 57, 131, 131 
    CONTROL "", 1306, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 260, 109, 131, 131 
    CONTROL "File:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 241, 164, 17, 9 
-   CONTROL "Looping Map Setting (*):", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 166, 79, 9 
-   CONTROL "", 1307, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 97, 165, 76, 131 
-   CONTROL "Filename", 1415, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 15, 215, 28 
+   CONTROL "Looping Map Setting (*):", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 180, 79, 9 
+   CONTROL "", 1307, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 97, 179, 76, 131 
+   CONTROL "Filename", 1415, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 15, 215, 37 
    CONTROL "", 1418, COMBOBOX, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 14, 26, 80, 186 
    CONTROL "/", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 97, 29, 8, 9 
    CONTROL "", 1259, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 103, 26, 91, 13 
    CONTROL ".mps", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 198, 29, 17, 9 
-   CONTROL "Slot (*):", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 61, 31, 9 
+   CONTROL "Slot (*):", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 75, 31, 9 
    CONTROL " ◆ Create a new map file and register it to the System Database.", 1977, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 3, 453, 10 , WS_EX_STATICEDGE
    CONTROL "File:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 241, 111, 17, 9 
    CONTROL "", 1308, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 260, 162, 131, 131 
@@ -1525,10 +1526,11 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1582, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 260, 162, 111, 12 
    CONTROL "Use", 1583, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 296, 149, 45, 10 
    CONTROL "Previous Map", 1584, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 347, 149, 57, 10 
-   CONTROL "Static", 1961, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 119, 194, 45 
-   CONTROL "Changing \"Slot\" is not recommended, but \"Name\" (displayed in Map Selection) is OK.", 1978, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 152, 56, 72, 36 , WS_EX_STATICEDGE
+   CONTROL "Static", 1961, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 133, 194, 45 
+   CONTROL "Changing \"Slot\" is not recommended, but \"Name\" (displayed in Map Selection) is OK.", 1978, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 152, 70, 72, 36 , WS_EX_STATICEDGE
    CONTROL "Fields marked with \"(*)\" are stored in the System Database.\r\nAll other fields are stored in the map file (.mps).", 1979, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 241, 18, 211, 20 , WS_EX_STATICEDGE
-   CONTROL "A new map will be created with the above settings.", 1980, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 137, 216, 174, 15 , WS_EX_STATICEDGE
+   CONTROL "A new map will be created with the above settings.", 1980, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 137, 233, 174, 15 , WS_EX_STATICEDGE
+   CONTROL "Letters, numbers, and standard symbols recommended.", 1981, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 40, 206, 11 , WS_EX_STATICEDGE
 }
 
 153 DIALOGEX 0, 200, 1145, 830
@@ -2054,13 +2056,13 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1062, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 349, 29, 92, 13 
    CONTROL "", 1063, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 349, 43, 92, 13 
    CONTROL "Sub 1:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 328, 31, 21, 9 
-   CONTROL "Sub 2:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 328, 43, 21, 9 
+   CONTROL "Sub 2:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 328, 44, 21, 9 
    CONTROL "", 1064, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 349, 57, 92, 13 
    CONTROL "Sub 3:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 328, 58, 21, 9 
    CONTROL "Register License", 1416, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_DISABLED | WS_TABSTOP, 567, 275, 28, 7 
-   CONTROL "Starting Leader Sprite", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 284, 168, 45 
-   CONTROL "", 1065, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 14, 294, 133, 13 
-   CONTROL "Load", 1419, BUTTON, BS_PUSHBUTTON | BS_FLAT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 150, 294, 21, 13 
+   CONTROL "Starting Leader Sprite", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 9, 284, 179, 45 
+   CONTROL "", 1065, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 14, 294, 145, 13 
+   CONTROL "Load", 1419, BUTTON, BS_PUSHBUTTON | BS_FLAT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 162, 294, 21, 13 
    CONTROL "Font Anti-Aliasing", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 326, 91, 116, 22 
    CONTROL "ON", 1375, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 331, 100, 29, 10 
    CONTROL "OFF", 1376, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 361, 100, 31, 10 
@@ -2070,7 +2072,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Leader/Followers", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 223, 175, 53, 9 
    CONTROL "", 1485, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 230, 185, 43, 103 
    CONTROL "", 1486, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 276, 185, 42, 103 
-   CONTROL "When using the Base System, this has no effect.\r\nSet the party using VariableDB Type 6.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 308, 157, 19 , WS_EX_STATICEDGE
+   CONTROL "Ignored when using the Base System. You can set the party in Variable DB Type 6, and set the sprites in Type 0.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 11, 308, 175, 19 , WS_EX_STATICEDGE
    CONTROL "Picture Scale Method", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 220, 33, 97, 49 
    CONTROL "Inactive Window Behavior", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 216, 88, 102, 52 
    CONTROL "Distinct and Rough\r\n(Standard)", 1614, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP, 227, 44, 84, 17 
@@ -3370,6 +3372,21 @@ FONT 9, "MS Shell Dlg"
    CONTROL "SDB", 1747, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 124, 198, 20, 12 
    CONTROL "<", 1632, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 106, 122, 11, 13 
    CONTROL ">", 1633, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 129, 123, 11, 13 
+}
+
+1678 DIALOGEX 0, 0, 269, 136
+STYLE DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Start Guide"
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Shell Dlg"
+{
+   CONTROL 1688, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 92, 5, 18, 18 
+   CONTROL "", 1981, LISTBOX, LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 7, 15, 79, 100 
+   CONTROL "TITLE", 1979, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 115, 8, 143, 12 , WS_EX_STATICEDGE
+   CONTROL "Tips", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 5, 16, 8 
+   CONTROL "↑ Prev", 1982, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 117, 37, 17 
+   CONTROL "Next ↓", 1983, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 46, 117, 37, 17 
+   CONTROL "", 1984, EDIT, ES_LEFT | ES_MULTILINE | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 89, 24, 175, 110 , WS_EX_CLIENTEDGE
 }
 
 30721 DIALOG 9, 26, 183, 70
@@ -5939,7 +5956,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11809, 	"Update data"
   11810, 	"If a jump-to-label command targets a label that is in branches 1-4 of Condition (Number)\r\nthat include an \"Else\" case, execution will move to the \"Else\" branch after the targeted\r\nbranch finishes.\r\nPlease be careful when using jump-to-label commands that target labels in Condition\r\nbranches. (This behavior is for processing speed optimizations.)"
   11811, 	"Caution: Label Function"
-  11812, 	"If you enter a Debug Text using the following commands, the information\r\nwill be displayed in the \"Debug Window\" during gameplay.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it has been updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture-related command is executed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is executed on the leader.\r\n    If the value is 0 or greater, the map event with that ID\r\n    will be monitored instead.\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n   Displays a list of the top 10 highest-load events (TOP) and their\r\n   processing times, updated every 1 frame (FRAME).\r\n   Increasing the \"FRAME\" value reduces the update frequency, and the\r\n   processing times during that period are added together.\r\n   Setting \"ON\" to \"ON2\" disables display in the Debug Window. (The\r\n   output can only be retrieved via the System String SysS82.)\r\n   Note: This feature increases processing load. It is recommended to\r\n   turn it off when releasing your project."
+  11812, 	"If you enter a Debug Text using the following commands, the information\r\nwill be displayed in the \"Debug Window\" during gameplay.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it has been updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture-related command is executed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is executed on the leader.\r\n    If the value is 0 or greater, the map event with that ID\r\n    will be monitored instead.\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n   Displays a list of the top 10 highest-load events (TOP) and their\r\n   processing times, updated every 1 frame (FRAME).\r\n   Increasing the \"FRAME\" value reduces the update frequency, and the\r\n   processing times during that period are added together.\r\n   Changing \"ON\" to \"ON2\" disables display in the Debug Window (the\r\n   output can only be retrieved via the System String SysS82).\r\n   Adding \":OVER=1.0\" shows only events taking 1.0 ms or longer.\r\n   Adding \":NO_TITLE\" hides the first line.\r\n   Note: This feature increases processing load. It is recommended to\r\n   turn it off when releasing your project."
   11813, 	"Debug Text Command Tips"
   11814, 	"The data could not be loaded because it is protected by a newer version of the protection.\r\n\r\nPlease update Editor to the latest version."
   11815, 	"■Game.exe v3.310\r\n  ●Fixed a bug where waiting time did not occur when \"Wait\" was executed during \"Prepare Transition\".\r\n  If you want to revert to the old behavior, set \"Adjust Game.exe Version\" to \"Old Version 3.300\" (\"Wait\" during \"Prepare Transition\" will be almost disabled).\r\n  ●Pixel Movement is now in beta. In the old alpha version of Pixel Movement, direction changes and animations did not work with 4-way sprites, but did work with 8-way sprites, and T/TX character sprites did not animate with either 4-way or 8-way sprites.\r\n  You can revert to that behavior by setting \"Adjust Game.exe Version\" to \"Old Version 3.300\" or earlier."
@@ -6490,6 +6507,13 @@ LANGUAGE LANG_JAPANESE, 0x1
   12230, 	"Play at 0% (Standard);Auto-Convert 0% to 100% (Old);"
   12231, 	"■Game.exe v3.685\r\n●[Set Variable+/Picture] Fixed a bug where \"Image Width\" for string pictures returned a value smaller than intended by the amount of character spacing if the string contained \"-[X]\" (character spacing) or if \"Horizontal Character Spacing\" in Basic Game Settings was set to 1 or higher.\r\n●[Set Variable+/Picture] Fixed a bug where \"Picture Horizontal/Vertical Divisions\" for a Simple Window picture returned the picture's size (it should always return 1).\r\n→ If \"Image Width\" or \"Horizontal/Vertical Divisions\" for string pictures no longer behaves as intended, set \"Adjust Game.exe Version\" to \"Old Version 3.668\" or earlier."
   12232, 	"Enable Numpad 1/3/7/9 Movement (Standard);Disable Numpad 1/3/7/9 Movement (Old);"
+  12233, 	"■Game.exe v3.692\r\n●[Move Route & Erase Event] Fixed a bug where events targeted by \"Move Route\" continued moving even after being temporarily removed by the \"Erase Event\" command.\r\n●[DB Management] Fixed an issue where errors for missing Types or Data did not appear as expected.\r\n→ If you are relying on these behaviors and things no longer work as intended, or if unexpected DB errors occur, set \"Adjust Game.exe Version\" to \"Old Version 3.685\" or earlier."
+  12234, 	"&Undo\tCtrl+Z"
+  12235, 	"Cu&t\tCtrl+X"
+  12236, 	"&Copy\tCtrl+C"
+  12237, 	"&Paste\tCtrl+V"
+  12238, 	"&Delete\tDel"
+  12239, 	"Select &All\tCtrl+A"
 }
 
 STRINGTABLE
