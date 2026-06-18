@@ -6,7 +6,7 @@
 5:Message Continue Icon X (Add to Sys1)
 6:Message Continue Icon Y (Add to Sys2)
 7:Initial Choice (0,1,2...)
-8:Base Font Size
+8:Default Font Size
 9:Message Speed (X chars/s)
 10:Message Wait (X frames)
 11:Picture String Speed (X chars/s)
