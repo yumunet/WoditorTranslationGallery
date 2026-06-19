@@ -13,34 +13,34 @@ COMMENT:
   (Woditor is short for WOLF RPG Editor.)
 ---
 TITLE:
-マップ新規作成(1)
+Creating a New Map (1)
 COMMENT:
-【マップ作成の基本は「マップ選択」ウィンドウから！】
+The Map Selection window is the starting point for creating maps!
 
-1. マップを新たに作るときは、まずメインウィンドウ上のメニューの「表示」→「マップ選択ウィンドウ」を開いておきます。
-　（もう「マップ選択」ウィンドウが出ているなら問題ありません！）
+1. To create a new map, first open the "Map Selection" window from the "View" menu in the main window.
+   (If the Map Selection window is already open, you're all set!)
 
-2. その[マップ選択]ウィンドウ内のツリーで好きな項目を選んで、[右クリック]→「新規マップ作成」を選ぶと、そこに「子のマップ」が作れます！
+2. In the tree view of the Map Selection window, select any item you like, hen right-click it and choose "Create New Map" to create a child map under it!
 
-　でも、その際にマップの「設定」も必要になります。
-　「新規マップ作成」前に、次のページを開いておくといいですよ。
+  However, you'll also need to configure the map's settings at that time.
+  It's a good idea to read the next page as well.
 ---
 TITLE:
-マップ新規作成(2)
+Creating a New Map (2)
 COMMENT:
-【新規マップの設定、最初は最小限でOK！】
+If you're new to this, you can keep the settings minimal!
 
-1. 新規マップ作成時は、慣れないうちは[登録名]だけ設定しておけば、他は[初期値]のままで問題ありません。
-　以下の2つだけ注意しましょう！
+1. When creating a new map, if you're not familiar with the settings yet, you only need to set "Name". You can leave everything else at its default value.
+   Just keep these two things in mind!
 
-　- 保存フォルダとファイル名 → そのままで問題ありませんが、後からの変更は少し面倒です。必要なら今のうちに指定しましょう。
-　- 登録先 → [登録ID]はそのままでOKです。[登録名]だけは分かりやすい名前を付けましょう。
+   - Save folder and file name: The defaults are fine, but changing them later can be a bit of a hassle. If you want to change them, now is a good time.
+   - Register to System DB: You can leave "Slot" as it is. Just make sure to enter a name that's easy to recognize in "Name".
 
-2. 以下はあとからでも変更できる内容です。
+2. The following settings can be changed later.
 
-　- マップサイズ → 初期値だと「1画面分」のサイズになります。
-　- タイルセット → 使うものが分かっていれば選んでおきましょう。
-　- BGM・BGS・背景画像 → 設定は後からでも構いません。何もなければ無音で背景なしです。
+   - Map Size: By default, the map size is one screen.
+   - Tileset: If you already know which tileset you'll use, you can select it now.
+   - BGM, BGS, and Background: These can be set later. If left blank, the map will have no background image and no music.
 ---
 TITLE:
 マップ設定の変更
