@@ -6597,7 +6597,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 {
   32836, 	"\nPencil Tool"
   32837, 	"\nFill Tool (W)"
-  32838, 	"\nSquare Fill Tool (E)"
+  32838, 	"\nRectangle Fill Tool (E)"
   32841, 	"\nUndo (Map Tiles Only) [Ctrl+Z]"
   32843, 	"\nPencil Tool (Q) - press X to erase (also in other tools)"
   32846, 	"\nCreate game data. Can also encrypt."
