@@ -43,75 +43,76 @@ If you're new to this, you can keep the settings minimal!
    - BGM, BGS, and Background: These can be set later. If left blank, the map will have no background image and no music.
 ---
 TITLE:
-マップ設定の変更
+Changing Map Settings
 COMMENT:
-【「マップ設定」はあとからでも変えられる！】
+You can change map settings anytime!
 
-1. 「マップ設定」はあとからでも変更可能です。
-　マップ上で「Ev」レイヤーに切り替え、どこでもいいので[右クリック]して出てくるメニューから[「このマップの設定」を開く]を選びましょう。
-　これで、いま開いているマップの「マップ設定」を変更できます。
+1. Map settings can be changed at any time.
+   Switch to the Event layer, then right-click anywhere on the map and select "Open Map Settings".
+   This lets you change the current map's settings.
 
-2. [マップサイズ]や[タイルセット]、[BGM]、[BGS]、[背景]も「マップ設定」画面であとから変更できます。
-　なので、新規マップ作成時に慌てて全部設定しなくても大丈夫です。
+2. Map Size, Tileset, BGM, BGS, and Background can also be changed later from the Map Settings window.
+   So there's no need to rush and configure everything when creating a new map.
 ---
 TITLE:
-マップの描き方
+Drawing Maps
 COMMENT:
-【マップの描き方、レイヤーに注意！】
+When drawing maps, pay attention to layers!
 
-1. マップを描くときは、まずメインウィンドウ左上あたりにある「1」「2」「3」「Ev」などのボタンのうち、「1」「2」「3」のレイヤーを選びます！
-　すると「マップチップ」ウィンドウが出てくるはずです。
+1. To draw a map, first select one of the 1 / 2 / 3 layer buttons near the top-left of the main window.
+   The "Map Tile" window should then appear.
 
-2. 最初はまず「1」レイヤーを選んで、「マップチップ」ウィンドウから[左クリック]でチップを選び、地面や床を描いてみましょう。
-　レイヤー1は、いちばん下に敷く絵を描く場所、と思っておけばだいたいOKです！
+2. Start by selecting layer 1. Left-click a tile from the "Map Tile" window, then try drawing the ground or floor.
+   You can think of layer 1 as the base of the map!
 
-3. そのあと必要に応じて「2」「3」レイヤーに、壁や飾りなどを重ねていきます。
-　「下地を1」「重ねるものを2や3」と考えると分かりやすいですよ。
+3. After that, use layers 2 and 3 to add walls, decorations, and other details as needed.
+   Think of layer 1 as the base, and layers 2 and 3 as the things you place on top.
 ---
 TITLE:
-マップ作成 便利TIPS1
+Map Creation Tips 1
 COMMENT:
-【マップを描くのが楽になるテクニック集！ その1！】
+Useful techniques to make map drawing easier! Part 1!
 
-　「1」～「3」レイヤー選択時に……
+  When layers 1-3 are selected...
 
-・「マップチップ」ウィンドウ上で[左クリック]ドラッグすると、範囲選択できます。
+- Drag with a left-click in the "Map Tile" window to select an area of tiles.
 
-・「メインウィンドウ」上で[右クリック]すると、選んだチップを「コピー」できます。
-　ドラッグすると「範囲コピー」もできますよ！
+- Right-click a tile in the main window to copy it.
+  Drag with a right-click to copy an area of tiles.
 
-・「メインウィンドウ」でチップが何もないところを[右クリック]すると、「消しゴム」（チップ0番）状態になります。
-　「マップチップ」ウィンドウの一番左上も「消しゴム」です。本当は透明チップですけどね。
-　「メインウィンドウ」上で「Xキー」を押しても消せますよ！
+- Right-click an empty spot in the main window to switch to the eraser (tile 0).
+  The tile in the top-left corner of the "Map Tile" window is also the eraser.
+  The eraser is actually a transparent tile.
+  You can also erase tiles by pressing the X key in the main window.
 ---
 TITLE:
-マップ作成 便利TIPS2
+Map Creation Tips 2
 COMMENT:
-【マップを描くのが楽になるテクニック集！ その2！】
+Useful techniques to make map drawing easier! Part 2!
 
-・「メインウィンドウ」または「マップチップ」ウィンドウ上で、「スペースキー」または「マウス中クリック」を押しながらドラッグすると、マップやチップをスライドさせられます！
-　便利ですよ。
-　（この操作は入力済みイベントコマンド欄やタイル設定時でも有効です）
+- In the main window or the "Map Tile" window, drag while holding the Space key or middle mouse button to scroll the map or tiles.
+  Very handy!
+  (This also works in the event command list and while editing tile settings.)
 
-・「メインウィンドウ」上で、
-　- 「Ctrl＋マウスホイール」でマップを拡大縮小できます。
-　- 「Ctrl＋右クリックドラッグ」で3レイヤー分を「コピー」できます。
-　 → そのまま「Ctrl＋左クリック」で3レイヤー分丸ごと「貼り付け」できます。
+- In the main window:
+  - Use Ctrl + mouse wheel to zoom in or out.
+  - Use Ctrl + right-drag to copy all three layers.
+    Then use Ctrl + left-click to paste all three layers.
 ---
 TITLE:
-マップ作成 ｼｮｰﾄｶｯﾄｷｰ
+Map Creation Shortcut Keys
 COMMENT:
-【マップ作成時のショートカットキーを覚えよう！】
+Learn the shortcut keys for map creation!
 
-- 1～4キー → 選んだ番号のレイヤーに切り替え
+- Number keys 1-4 → Switch to the corresponding layer
 
-[以下はどれもマップチップ編集時のみ有効]
-- [右クリック]2回 → レイヤーを1つ切り替え
-- Q → 鉛筆ツール
-- W → 塗りつぶしツール
-- E → 四角塗りつぶしツール
-- Xキー → 選んでいるマスを透明化（消しゴム）
-- Ctrl＋Z → マップ編集を一つ前に戻す（アンドゥ）
+Only available while editing map tiles:
+- Double right-click → Switch to the next layer
+- Q → Pencil Tool
+- W → Fill Tool
+- E → Rectangle Fill Tool
+- X → Make the selected tile transparent (Eraser)
+- Ctrl + Z → Undo the last map edit
 ---
 TITLE:
 ゲーム開始位置の設定
