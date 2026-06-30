@@ -115,28 +115,28 @@ When editing map tiles:
 - Ctrl + Z → Undo the last map edit
 ---
 TITLE:
-ゲーム開始位置の設定
+Setting the Starting Position
 COMMENT:
-【主人公がどこからスタートするかを決めよう！】
+Choose where the player will start the game!
 
-1. ゲーム開始直後に主人公が立っている場所は「ゲーム開始位置」で決まります。
+1. The player's starting position is determined by the Game Start Position.
 
-2. 「ゲーム開始位置」を設定するときは、まず開始したいマップを開いて、レイヤーを「Ev」に切り替えましょう。
+2. To set the Game Start Position, first open the map where you want the game to begin, then switch to the Event layer.
 
-3. 主人公を立たせたい場所で[右クリック]し、右クリックメニューの中にある「ゲーム開始位置に設定」を選べばOKです！
-　これで、ゲーム開始時にその場所から始まるようになります。
+3. Right-click where you want the player to appear, then select "Set Game Start Position".
+   That's it! The game will now start from that position.
 ---
 TITLE:
-テストプレイをしよう
+Try Playtest
 COMMENT:
-【作ったらすぐ試す！ これが上達のコツです！】
+Test things as soon as you make them! That's the key to getting better!
 
-1. マップやイベントを作ったら、なるべく早めにテストプレイしてみましょう。
-　最後にまとめて確認するより、少し作ってすぐ試すほうが、どこで問題が起きたのか分かりやすいです！
+1. After creating a map or event, try testing it in Playtest as soon as you can.
+   Rather than checking everything all at once later, it's easier to tell where problems came from if you make a little progress and test it right away!
 
-2. テストプレイは、メインウィンドウ右端の[緑の矢印]アイコンで実行できます。
-　また、メインウィンドウなどで「Ctrl+T」を押しても開始できます。
-　ウィンドウによっては「F9」でもテストプレイ可能です。
+2. You can start Playtest by clicking the green arrow icon on the right side of the main window.
+   You can also start it by pressing Ctrl+T in the main window or other windows.
+   In some windows, F9 works too.
 ---
 TITLE:
 テスト中の修正反映
