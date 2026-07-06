@@ -139,39 +139,39 @@ Test things as soon as you make them! That's the key to getting better!
    In some windows, F9 works too.
 ---
 TITLE:
-テスト中の修正反映
+Applying Changes During Playtest
 COMMENT:
-【ゲームを起動したままだと、エディットした内容が自動では反映されない！】
+Changes are not applied automatically during Playtest!
 
-　[ゲームをテストプレイしながら]エディットしている場合、エディター内で変更しただけではゲーム内には自動で反映されません。
-　エディットした内容をゲーム内で反映したい場合は、ゲーム内で以下を行いましょう。
+If you're editing the game while Playtest is running, changes you make in the editor won't be applied to the game automatically.
+To apply your changes to the game, do one of the following.
 
-- まずはゲーム側で「F12」でリセット
-　→ 通常はこれでOKです。
+- First, press F12 in the game to reset.
+  This is usually all you need to do.
 
-- ゲーム側で「F11」（その場リロード）
-　→ マップ移動せずとも[マップ]、[コモンイベント]、[ユーザデータベース]、[タイル設定]などの反映が可能です。
-　　ただし[可変DBはそのまま]です。
-　　また、[処理中のイベントは中断]されます。
+- Press F11 in the game to reload on the spot.
+  This lets you apply changes to maps, Common Events, the User Database, tile settings, and more.
+  However, the Variable DB won't be reloaded.
+  Also, any event currently running will be stopped.
 
-- ゲーム基本設定で[画面サイズ]の変更などをした場合
-　→ 「ゲームのウィンドウを閉じて」からテストプレイし直す必要があります。
+- If you changed the screen size or other settings in Basic Game Settings:
+  You'll need to close the game window, then start Playtest again.
 
-- 変更したのが[マップだけ]の場合
-　→ この場合は[場所移動]でマップを切り替えるだけでも最新のマップになります。
+- If you only changed a map:
+  You can also reload the map simply by switching maps with a Transfer command.
 ---
 TITLE:
-イベントの設置
+Placing Events
 COMMENT:
-【次はイベント設置！ イベントは「Ev」レイヤーで置きます！】
+Next, let's place events! Events are placed on the Event layer!
 
-1. イベントを置きたいときは、まずレイヤーを「Ev」に切り替えましょう。
+1. When you want to place an event, first switch to the Event layer.
 
-2. 何もない場所で[ダブルクリック]すると、その場所に新しいイベントを置けます。
-　（[右クリック]→「イベント作成/編集」でも可）
-　「話す人」「調べるもの」「宝箱」「場所移動」など、ゲーム中の反応の多くはイベントで作ります！
+2. Double-click an empty spot to place a new event there.
+   You can also right-click and select "Create/Edit Event".
+   You can use events to create many things that happen in the game, such as people to talk to, objects to inspect, treasure chests, and map transfers!
 
-3. すでに置かれたイベントを開きたいときも、Evレイヤーでイベントを[ダブルクリック]すればOKです！
+3. To open an event that's already been placed, just double-click it on the Event layer!
 ---
 TITLE:
 イベントコマンドって？
