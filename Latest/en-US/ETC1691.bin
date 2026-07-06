@@ -174,17 +174,17 @@ Next, let's place events! Events are placed on the Event layer!
 3. To open an event that's already been placed, just double-click it on the Event layer!
 ---
 TITLE:
-イベントコマンドって？
+What Are Event Commands?
 COMMENT:
-【ウディタはすべてがイベントコマンドで動く！】
+Almost everything is done with Event Commands!
 
-　ウディタでは、文章を表示するのも、音を鳴らすのも、場所移動するのも、変数を変えるのも、基本的にはすべて「イベントコマンド」で行います！
-　つまりイベントコマンドは、ゲームを作るための「命令の部品」なんですね。
+In Woditor, things like displaying messages, playing sounds, transferring to another location, and changing variables are basically all done with Event Commands!
+In other words, Event Commands are the building blocks you use to create what happens in your game.
 
-　最初はたくさんあって難しそうに見えるかもしれませんが、全部をいきなり覚える必要はありません。
-　まずはよく使うものから少しずつ覚えていけば大丈夫です！
+There are a lot of them, so they might look difficult at first, but you don't need to learn them all right away.
+Just start with the ones you use often and learn them little by little!
 
-　このガイドでは、初心者の方でもよく使う[文章の表示][選択肢][変数操作][条件(数値)][ピクチャ][サウンド][場所移動][コモンイベント]コマンドについて紹介します。
+In this guide, we'll introduce commands that even beginners often use: Show Message, Show Choices, Set Variable, Condition (Number), Picture, Sound, Transfer, and Common Event.
 ---
 TITLE:
 [文章の表示]コマンド
