@@ -110,7 +110,7 @@
 109: -----
 110:Current Random Seed
 111:[RO] Window Active? (1:Yes)
-112:[RO] Test Play? (1:Yes)
+112:[RO] Playtest? (1:Yes)
 113: -----
 114:[RO] Adjusted Version (x100)
 115:[RO] Game.exe Version (x100)

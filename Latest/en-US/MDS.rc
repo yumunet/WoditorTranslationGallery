@@ -3285,11 +3285,11 @@ LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
    CONTROL 1674, -1, STATIC, SS_BITMAP | WS_CHILD | WS_VISIBLE, 19, 36, 37, 37 
-   CONTROL " With Base RPG System:\r\n\r\n - Common Events, User DB and Variable DB for the Base System\r\n - Only two maps: \"Title Map\" and \"Post-Start Map\"\r\n - Preconfigured system images and sounds (SystemFile)\r\n - Four preconfigured tileset settings\r\n - Several character sprites, monster images and background music\r\n\r\n What you can do in Test Play: Use the title screen, walk around the island after starting, and open the menu with the Cancel key.", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 77, 25, 220, 93 
+   CONTROL " With Base RPG System:\r\n\r\n - Common Events, User DB and Variable DB for the Base System\r\n - Only two maps: \"Title Map\" and \"Post-Start Map\"\r\n - Preconfigured system images and sounds (SystemFile)\r\n - Four preconfigured tileset settings\r\n - Several character sprites, monster images and background music\r\n\r\n What you can do in Playtest: Use the title screen, walk around the island after starting, and open the menu with the Cancel key.", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 77, 25, 220, 93 
    CONTROL "Cancel", 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 249, 209, 50, 17 
    CONTROL "Create Empty Data with Base RPG System", 1898, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 76, 64, 36 
    CONTROL 1673, -1, STATIC, SS_BITMAP | WS_CHILD | WS_VISIBLE, 20, 130, 37, 37 
-   CONTROL " Completely Empty Data:\r\n\r\n - Only one starting map\r\n - No assets or data\r\n - Only two folders: \"BasicData\" and \"MapData\"\r\n\r\n In Test Play, only a black screen appears.", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 77, 132, 220, 70 
+   CONTROL " Completely Empty Data:\r\n\r\n - Only one starting map\r\n - No assets or data\r\n - Only two folders: \"BasicData\" and \"MapData\"\r\n\r\n In Playtest, only a black screen appears.", -1, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 77, 132, 220, 70 
    CONTROL "Create Completely Empty Data", 1899, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 172, 64, 26 
    CONTROL "Let's create new data! Which do you want to use?", -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 13, 6, 274, 11 , WS_EX_STATICEDGE
 }
@@ -6578,7 +6578,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
-  32816, 	"\nStart Test Play (Ctrl+T) - hold Shift to start in a new process"
+  32816, 	"\nStart Playtest (Ctrl+T) - hold Shift to start in a new process"
   32818, 	"\nUpdate Map with Newest Tileset"
   32819, 	"\nCreate New Map"
   32821, 	"\nShow Mini-Manual"
