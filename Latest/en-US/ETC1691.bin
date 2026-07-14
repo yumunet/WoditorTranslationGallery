@@ -2,8 +2,8 @@
 Getting Started
 COMMENT:
   This is the Start Guide for new users!
-  Even if you close this window, you can open it again from "Help" in the main window.
-  Just remember that before you close it!
+  Even if you close this window, you can open it again from the Help menu in the main window.
+  Just keep that in mind before you close it!
 
   This guide covers the basics, along with a few useful tips and tricks.
   Be sure to check it out when you have some free time!
@@ -17,12 +17,12 @@ Creating a New Map (1)
 COMMENT:
 The Map Selection window is the starting point for creating maps!
 
-1. To create a new map, first open the "Map Selection" window from the "View" menu in the main window.
+1. To create a new map, first open the Map Selection window from the View menu in the main window.
    (If the Map Selection window is already open, you're all set!)
 
-2. In the tree view of the Map Selection window, select any item you like, hen right-click it and choose "Create New Map" to create a child map under it!
+2. In the tree view of the Map Selection window, select any item you like, then right-click it and choose "Create New Map" to create a child map under it!
 
-  However, you'll also need to configure the map's settings at that time.
+  However, you'll also need to configure the map's settings when you create it.
   It's a good idea to read the next page as well.
 ---
 TITLE:
@@ -30,17 +30,17 @@ Creating a New Map (2)
 COMMENT:
 If you're new to this, you can keep the settings minimal!
 
-1. When creating a new map, if you're not familiar with the settings yet, you only need to set "Name". You can leave everything else at its default value.
+1. If you're not familiar with the settings yet, just set "Name" when creating a new map. You can leave all other settings at their default values.
    Just keep these two things in mind!
 
    - Save folder and file name: The defaults are fine, but changing them later can be a bit of a hassle. If you want to change them, now is a good time.
-   - Register to System DB: You can leave "Slot" as it is. Just make sure to enter a name that's easy to recognize in "Name".
+   - Register to System DB: You can leave "Slot" as it is. Just make sure to enter a name that's easy to recognize in the "Name" field.
 
 2. The following settings can be changed later.
 
-   - Map Size: By default, the map size is one screen.
+   - Map Size: By default, the map is one screen in size.
    - Tileset: If you already know which tileset you'll use, you can select it now.
-   - BGM, BGS, and Background: These can be set later. If left blank, the map will have no background image and no music.
+   - BGM, BGS, and Background: These can be set later. If left blank, there will be no sound or background image.
 ---
 TITLE:
 Changing Map Settings
@@ -59,10 +59,10 @@ Drawing Maps
 COMMENT:
 When drawing maps, pay attention to layers!
 
-1. To draw a map, first select one of the 1 / 2 / 3 layer buttons near the top-left of the main window.
-   The "Map Tile" window should then appear.
+1. To draw a map, first select one of the 1, 2, or 3 layer buttons near the top left of the main window.
+   The Map Tile window should then appear.
 
-2. Start by selecting layer 1. Left-click a tile from the "Map Tile" window, then try drawing the ground or floor.
+2. Start by selecting layer 1. Left-click a tile in the Map Tile window, then try drawing the ground or floor.
    You can think of layer 1 as the base of the map!
 
 3. After that, use layers 2 and 3 to add walls, decorations, and other details as needed.
@@ -73,15 +73,15 @@ Map Creation Tips 1
 COMMENT:
 Useful techniques to make map drawing easier! Part 1!
 
-  When layers 1-3 are selected...
+  When layer 1, 2, or 3 is selected:
 
-- Drag with a left-click in the "Map Tile" window to select an area of tiles.
+- Left-drag in the Map Tile window to select an area of tiles.
 
 - Right-click a tile in the main window to copy it.
-  Drag with a right-click to copy an area of tiles.
+  Right-drag to copy an area of tiles.
 
 - Right-click an empty spot in the main window to switch to the eraser (tile 0).
-  The tile in the top-left corner of the "Map Tile" window is also the eraser.
+  The tile in the top-left corner of the Map Tile window is also the eraser.
   The eraser is actually a transparent tile.
   You can also erase tiles by pressing the X key in the main window.
 ---
@@ -90,29 +90,29 @@ Map Creation Tips 2
 COMMENT:
 Useful techniques to make map drawing easier! Part 2!
 
-- In the main window or the "Map Tile" window, drag while holding the Space key or middle mouse button to scroll the map or tiles.
+- In the main window or the Map Tile window, hold down the Space key or middle mouse button and drag to scroll the map or tiles.
   Very handy!
   (This also works in the event command list and while editing tile settings.)
 
 - In the main window:
-  - Use Ctrl + mouse wheel to zoom in or out.
-  - Use Ctrl + right-drag to copy all three layers.
-    Then use Ctrl + left-click to paste all three layers.
+  - Use Ctrl+mouse wheel to zoom in or out.
+  - Use Ctrl+right-drag to copy all three layers.
+    Then use Ctrl+left-click to paste all three layers.
 ---
 TITLE:
 Map Creation Shortcut Keys
 COMMENT:
 Learn the shortcut keys for map creation!
 
-- Number keys 1-4 → Switch to the corresponding layer
+- Number keys 1-4: Switch to the corresponding layer
 
 When editing map tiles:
-- Double right-click → Switch to the next layer
-- Q → Pencil Tool
-- W → Fill Tool
-- E → Rectangle Fill Tool
-- X → Make the selected tile transparent (Eraser)
-- Ctrl + Z → Undo the last map edit
+- Double right-click: Switch to the next layer
+- Q: Pencil Tool
+- W: Fill Tool
+- E: Rectangle Fill Tool
+- X: Make the selected tile transparent (Eraser)
+- Ctrl+Z: Undo the last map edit
 ---
 TITLE:
 Setting the Starting Position
@@ -127,12 +127,12 @@ Choose where the player will start the game!
    That's it! The game will now start from that position.
 ---
 TITLE:
-Try Playtest
+Playtest
 COMMENT:
 Test things as soon as you make them! That's the key to getting better!
 
-1. After creating a map or event, try testing it in Playtest as soon as you can.
-   Rather than checking everything all at once later, it's easier to tell where problems came from if you make a little progress and test it right away!
+1. After creating a map or event, test it in Playtest as soon as you can.
+   Testing after each small change makes it easier to tell what caused a problem than checking everything all at once later.
 
 2. You can start Playtest by clicking the green arrow icon on the right side of the main window.
    You can also start it by pressing Ctrl+T in the main window or other windows.
@@ -146,7 +146,7 @@ Changes are not applied automatically during Playtest!
 If you're editing the game while Playtest is running, changes you make in the editor won't be applied to the game automatically.
 To apply your changes to the game, do one of the following.
 
-- First, press F12 in the game to reset.
+- First, press F12 in the game to reset the game.
   This is usually all you need to do.
 
 - Press F11 in the game to reload on the spot.
@@ -181,10 +181,10 @@ Almost everything is done with Event Commands!
 In Woditor, things like displaying messages, playing sounds, transferring to another location, and changing variables are basically all done with Event Commands!
 In other words, Event Commands are the building blocks you use to create what happens in your game.
 
-There are a lot of them, so they might look difficult at first, but you don't need to learn them all right away.
-Just start with the ones you use often and learn them little by little!
+There are a lot of them, so they may seem difficult at first, but you don't need to learn them all right away.
+Just start with the commonly used ones and learn them little by little!
 
-In this guide, we'll introduce commands that even beginners often use: Show Message, Show Choices, Set Variable, Condition (Number), Picture, Sound, Transfer, and Common Event.
+In this guide, I'll introduce some commands that beginners often use: Show Message, Show Choices, Set Variable, Condition (Number), Picture, Sound, Transfer, and Common Event.
 ---
 TITLE:
 [文章の表示]コマンド
