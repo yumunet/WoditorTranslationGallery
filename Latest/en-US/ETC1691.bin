@@ -187,54 +187,53 @@ Just start with the commonly used ones and learn them little by little!
 In this guide, I'll introduce some commands that beginners often use: Show Message, Show Choices, Set Variable, Condition (Number), Picture, Sound, Transfer, and Common Event.
 ---
 TITLE:
-[文章の表示]コマンド
+Show Message Command
 COMMENT:
-【いちばん最初に試すならこれ！】
+This is the best command to try first!
 
-1. イベントを作ったら、まず中に[文章の表示]を1つ入れてみましょう。
-　これがいちばん簡単で、「イベントがちゃんと動いた！」と確認しやすいコマンドです。
+1. After creating an event, try adding a Show Message command to it first.
+   This is the simplest command and an easy way to check that the event is working properly!
 
-2. マップイベント、またはコモンイベントのウィンドウ内にある[■ イベントコマンド入力ウィンドウ表示 ■]をクリックして「イベントコマンド入力」欄を開きます。
+2. In the Map Event or Common Event window, click "■ Open Command Window ■" to open the Command Window.
 
-3. 「イベントコマンド入力」ウィンドウの左側から[文章の表示]を選びます（たぶん初期選択されています）。
-　文章として「こんにちは！」とだけ書いて[文章入力]ボタンを押すと、そのイベントを調べたときに文章が表示されます。
+3. Select "Show Message" from the left side of the Command Window. (It's probably selected by default.)
+   Enter just "Hello!" as the message and click "Insert". The message will appear when you interact with the event.
 
-4. マップ/コモンイベントウィンドウ側に「セーブ」または「更新」ボタンがあるので、それを押してセーブします（以後はセーブについて説明しません）。
+4. Click "Save" or "Update" in the Map Event or Common Event window to save your changes.
+   (From here on, this guide won't explain the saving step again.)
 
-5. 最初の練習では、「村人に話しかける」「看板を読む」「宝箱を調べる前に一言出す」みたいなイベントを作ると分かりやすいですよ。
+5. For your first practice, try making simple events like talking to a villager, reading a sign, or showing a short message before inspecting a treasure chest.
 ---
 TITLE:
-[選択肢]コマンド
+Show Choices Command
 COMMENT:
-【プレイヤーに「どれを選ぶ？」と聞けるコマンドです！】
+This command lets you ask the player, "Which will you choose?"
 
-1. [選択肢]コマンドを使うと、プレイヤーに複数の選択肢を表示して、どれを選んだかで処理を分けることができます。
+1. The Show Choices command lets you show several choices to the player and make different things happen depending on what they choose.
 
-2. たとえば、
-　- 「はい」
-　- 「いいえ」
-　の2つを出して、
-　「はい」なら先に進む、
-　「いいえ」なら会話を終える、
-　といったイベントが作れます。
+2. For example, you can show these two choices:
+   - "Yes"
+   - "No"
+   Then you can make an event where choosing "Yes" moves things forward, while choosing "No" ends the conversation.
 
-3. お店に入るかどうか、宝箱を本当に開けるか、依頼を受けるかどうか、など、RPGらしいやりとりにとても便利です！
+3. It's very useful for RPG-style interactions, such as deciding whether to enter a shop, open a treasure chest, or accept a quest!
 
-4. 最初は2択から試してみるのがおすすめです。
-　選択肢の結果で文章を変えるだけでも、ゲームらしさがぐっと増しますよ。
+4. It's a good idea to start with just two choices.
+   Even simply changing the message based on the player's choice can make your game feel much more interactive!
 ---
 TITLE:
-[変数操作]コマンド
+Set Variable Command
 COMMENT:
-【変数は「ゲームの状態を覚えておく箱」です！】
+Variables are "boxes" that remember the state of the game!
 
-1. 変数は、数値を入れておける箱のようなものです。
-　たとえば「宝箱を開けたフラグ」や「何かを行った数」などを記録したいときに使います。
-　変数の初期値は「0」です。
+1. A variable is like a box that can store a number.
+   You can use variables to keep track of things like whether a treasure chest has been opened or how many times something has been done.
+   The initial value of a variable is 0.
 
-2. 最初のうちは「変数に1を入れる」「変数に1足す」くらいが分かれば十分です！
+2. At first, you only need to know how to set a variable to 1 and add 1 to a variable!
 
-3. たとえばある変数に、（最初は0で）「ボタンを押したら1」のように入れておけば、「何かが起きたあとかどうか」を判定する材料にできます。
+3. For example, you can leave a variable at 0 at first, then set it to 1 when a button is pressed.
+   You can then use that variable to check whether something has already happened.
 ---
 TITLE:
 [条件(数値)]コマンド
