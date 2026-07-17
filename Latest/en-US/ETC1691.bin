@@ -214,7 +214,7 @@ This command lets you ask the player, "Which will you choose?"
 2. For example, you can show these two choices:
    - "Yes"
    - "No"
-   Then you can make an event where choosing "Yes" moves things forward, while choosing "No" ends the conversation.
+   Then you can make an event that moves things forward if "Yes" is chosen, and ends the conversation if "No" is chosen.
 
 3. It's very useful for RPG-style interactions, such as deciding whether to enter a shop, open a treasure chest, or accept a quest!
 
