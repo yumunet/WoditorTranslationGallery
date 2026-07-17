@@ -236,66 +236,59 @@ Variables are "boxes" that remember the state of the game!
    You can then use that variable to check whether something has already happened.
 ---
 TITLE:
-[条件(数値)]コマンド
+Condition (Number) Command
 COMMENT:
-【条件分岐で「場合によって処理を変える」！】
+Use conditions to make different things happen in different situations!
 
-1. [条件(数値)]は、
-　「もし変数の値が○○だったらこの処理」
-　「そうでなければ別の処理」
-　という分け方をしたいときに使います。
+1. The Condition (Number) command lets you make one thing happen if a variable has a certain value, and something else happen otherwise.
 
-2. たとえば、
-　- まだ宝箱を開けていない → アイテムを入手
-　- もう開けたあと → 「空っぽだ」と表示
-　のような処理を作るときに便利です。
+2. For example, it's useful for making events like this:
+   - If the treasure chest hasn't been opened yet: Give the player an item
+   - If it has already been opened: Display "It's empty."
 
-3. [変数操作]と組み合わせるととても強力です。
-　たとえば「変数が0なら初回会話、1以上なら2回目以降の会話」といったイベントも作れます！
-　会話の変化や一度きりのイベントには欠かせないコマンドですよ。
+3. It's especially powerful when combined with the Set Variable command.
+   For example, you can create an event that shows one conversation when a variable is 0, and a different one when it's 1 or higher!
+   This command is essential for changing conversations and creating one-time events.
 ---
 TITLE:
-[ピクチャ]コマンド
+Picture Command
 COMMENT:
-【画像を画面に表示したいときはこれ！】
+Use this command to display images on the screen!
 
-1. [ピクチャ]コマンドは、画像を画面の好きな位置に表示したり、動かしたり、消したりできるコマンドです。
+1. The Picture command lets you display an image anywhere on the screen, move it, or remove it.
 
-2. たとえば、
-　- 顔グラフィックの代わりに絵を出す
-　- イベント絵や一枚絵を表示する
-　といったときに使えます。
-　さらに慣れてくると、自作メニューを作ることもできます！
+2. For example, you can use it to:
+   - Show an illustration in place of a character portrait
+   - Show an illustration during a story scene
+   - Show a full-screen image
+   As you get more familiar with it, you can even create your own custom menus!
 
-3. 最初のうちは難しく見えるかもしれませんが、まずは
-　「画像を1枚表示する」
-　「しばらく待って消す」
-　くらいから試せば十分です！
+3. It may look difficult at first, but just start with simple things like:
+   - Displaying one image
+   - Waiting for a while, then removing it
 
-※慣れてくると、ウディタでRPG以外のものを作るときにもとても重要なコマンドになってきます。
-　自由な画面作りをしたくなったら、ぜひ仲良くなっておきたいコマンドですね。
+Once you get used to it, the Picture command becomes very important when making games other than RPGs with Woditor.
+If you want more freedom in designing your screens, this command is definitely worth getting familiar with!
 ---
 TITLE:
-[サウンド]コマンド
+Sound Command
 COMMENT:
-【音を鳴らすと、一気にゲームらしくなります！】
+Adding sound instantly makes your game come alive!
 
-1. [サウンド]コマンドでは、BGM・BGS・効果音などを再生できます。
-　たとえば、
-　- 会話の前後でBGMを変える
-　- 宝箱を開けたときに効果音を鳴らす
-　- 決定時に「ピッ」と鳴らす
-　といった演出が簡単に作れます。
+1. The Sound command lets you play BGM, BGS, and sound effects.
+   For example, you can easily do things like:
+   - Changing the BGM before or after a conversation
+   - Playing a sound when a treasure chest is opened
+   - Playing a beep when the player confirms an action
 
-2. 最初の練習では、宝箱や扉に効果音を付けてみるのがおすすめです。
-　絵や文字だけだったイベントが、ぐっと気持ちよくなりますよ！
+2. For your first practice, try adding sound effects to a treasure chest or door.
+   It'll make an event with only images and text feel much more satisfying!
 
-※ちなみに、あまり聞き慣れない「BGS」とは「背景音」のことです！
-　BGSはBGM同様、自動で音声がループしますが、
-　- [MIDI形式が再生できない（OGG、MP3、WAV音のみ）]
-　- [何チャンネルでも同時再生できる]
-　のが特徴です。
-　通常は「風の音」や「滝の音」などを再生するのに使われることが多いです。
+By the way, BGS stands for "background sound"!
+BGS also loops automatically, just like BGM. However, it has two key differences:
+- It can't play MIDI files; only OGG, MP3, and WAV files are supported
+- It can play any number of BGS channels at the same time
+BGS is usually used for sounds such as wind or waterfalls.
 ---
 TITLE:
 [場所移動]コマンド
