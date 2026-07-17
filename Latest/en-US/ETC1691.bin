@@ -291,72 +291,68 @@ BGS also loops automatically, just like BGM. However, it has two key differences
 BGS is usually used for sounds such as wind or waterfalls.
 ---
 TITLE:
-[場所移動]コマンド
+Transfer Command
 COMMENT:
-【別のマップに移動させたいときはこれ！】
+Use this command to move the player to another map!
 
-1. [場所移動]は、主人公を別のマップへ移動させるコマンドです。
-　町の入口から家の中へ入る、ダンジョンの次の階へ行く、という処理もこれで作れます！
+1. The Transfer command lets you move the player to another map.
+   You can use it for things like entering a house in town or going to the next floor of a dungeon!
 
-2. よくある作り方は、移動したい場所にイベントを置いて、そのイベントの中で[場所移動]を実行する方法です。
-　扉、階段、ワープポイントなどにぴったりですね。
+2. Usually, you place an event where you want the transfer to happen, then run the Transfer command inside it.
+   It's perfect for doors, stairs, warp points, and more.
 
-3. 移動先のマップと座標を指定する必要があるので、先に移動先マップが作られていると作業しやすいです。
-　まず行き先のマップを作っておいてから設定すると迷いにくいですよ。
+3. You need to specify the destination map and coordinates, so creating the destination map first makes setting up the transfer easier.
 ---
 TITLE:
-[コモンイベント]コマンド
+Common Event Command
 COMMENT:
-【[コモンイベント]コマンドで共通処理を呼び出し！】
+Use the Common Event command to call shared processes!
 
-1. コモンイベントは、いろんな場所から呼び出せる「共通の処理」です。
-　それを呼び出すのが[コモンイベント]コマンドです。
+1. A Common Event is a shared process that can be called from different places.
+   The Common Event command lets you call it.
 
-2. たとえば、「アイテムやお金の増減処理」「メニューを開く処理」などは、[基本システム]ではコモンイベントで処理されています。
+2. For example, in the Base System, things like adding or removing items, changing the amount of money, and opening the menu are handled by Common Events.
 
-3. [基本システム]を使うなら、最初のうちは「アイテムの増減」や「お金の増減」処理をさせたりするのに、この[コモンイベント]コマンドを使うことが多いでしょう。
+3. If you use the Base System, you'll probably use the Common Event command often.
 ---
 TITLE:
-イベントページって？
+What Are Event Pages?
 COMMENT:
-【マップイベントの中には「ページ」機能があります！】
+Map Events have a feature called Event Pages!
 
-1. マップイベントには複数の「ページ」を作ることができます。
-　イベントの「起動条件」を設定することで、「変数」の値に応じて、同じイベント内でもページを切り替えたりできるのです！
+1. You can create multiple pages within a Map Event.
+   By setting the Trigger for each page, you can make the event switch pages based on a variable's value!
 
-2. たとえば、宝箱なら
-　- 1ページ目：まだ開けていない状態（条件：Self0 が 0 と同じ）
-　- 2ページ目：開けたあとの空っぽ状態（条件：Self0 が 1 と同じ）
-　のように分けてページを作ることができます。
+2. For example, you can divide a treasure chest into pages like this:
+   - Page 1: Not opened yet (Trigger: Self0 Equal 0)
+   - Page 2: Empty after being opened (Trigger: Self0 Equal 1)
 
-3. ただし、イベントページは「番号の大きいページ」ほど優先されますのでご注意を！
+3. However, keep in mind that higher-numbered Event Pages take priority!
 ---
 TITLE:
-宝箱イベントを作ろう
+Let's Make a Treasure Chest
 COMMENT:
-【宝箱はイベント作りの基本がたくさん詰まっています！】
+A treasure chest is packed with the basics of event creation!
 
-1. 宝箱を作るには、まず「Ev」レイヤーで宝箱を置きたい場所にイベントを作成します。
-　見た目を宝箱っぽくしたいときは、[イベントの画像]を宝箱に設定しましょう。
-　（サンプルデータなら「タイルセット」内に宝箱の画像があるはずです！）
+1. To make a treasure chest, first create an event on the Event layer at the spot where you want to place the treasure chest.
+   To make it look like a treasure chest, set its Sprite to a treasure chest.
+   (In the sample data, you can select a treasure chest image from "Tileset"!)
 
-2. 1ページ目には、
-　- [文章の表示]
-　- アイテム入手処理（[基本システム]なら[コモンイベント]コマンド）
-　- [変数操作]で開けたフラグをオン（たとえば Self0 = 1）
-　などを入れて、「開けた」と分かる状態を記録しておきます。
+2. On Page 1, add things like:
+   - Show Message
+   - Give the player an item (in the Base System, use the Common Event command)
+   - Set Variable to mark the chest as opened (for example, Self0 = 1)
 
-3. そのあと2ページ目を作って、「もう開けたあと」のページにします。
-　「開いた宝箱の画像」を設定して、起動条件は「Self0 が 1 と同じ」などにするとよいでしょう。
-　2ページ目には「空っぽだ。」などの文章だけを入れておくと分かりやすいですよ。
+3. Next, create Page 2 for the chest after it has been opened.
+   Set its Sprite to an open treasure chest, and set its Trigger to "Self0 Equal 1".
+   If you add a message such as "It's empty." on Page 2, it's clear to the player that the chest is empty.
 
-4. つまり宝箱は、
-　- 文章の表示
-　- アイテムを増やす処理
-　- 開封済みかどうかの記録
-　- イベントページの切り替え
-　をまとめて練習できる、とても良い題材なんです！
-　落ちているアイテムなども、同じ方法で作れるでしょう。
+4. A treasure chest is a great way to practice all of these things at once:
+   - Showing messages
+   - Giving the player an item
+   - Recording whether the chest has been opened
+   - Switching between Event Pages
+   You can also make items lying on the ground in the same way.
 ---
 TITLE:
 起動条件[自動実行]
