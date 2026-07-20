@@ -357,25 +357,26 @@ A treasure chest is packed with the basics of event creation!
 TITLE:
 起動条件[自動実行]
 COMMENT:
-【マップに入ったら勝手に動く[自動実行]イベント！】
+Autorun events start on their own when you enter a map!
 
-1. イベントの起動条件を[自動実行]にすると、そのイベントは条件を満たした瞬間に自動で実行されます。
-　プレイヤーが話しかけなくても始まるイベント、と思えば分かりやすいです！
+1. If you set an event's Trigger to "Autorun", it runs automatically as soon as its conditions are met.
+   Think of it as an event that starts without the player having to interact with it!
 
-2. たとえば、
-　- ゲーム開始直後のオープニング
-　- マップに入った瞬間の会話
-　- 条件を満たしたときに強制的に発生するイベント
-　などに向いています。
+2. Autorun events are useful for things like:
+   - An opening scene right after the game starts
+   - A conversation right after the player enters a map
+   - An event that starts automatically when certain conditions are met
 
-3. ただし、[自動実行]イベントは実行中、主人公の移動や他のイベント起動などができなくなってしまいます。
-　そのため、終わったあとにちゃんと[自動実行]が止まるようにしておかないと、ずっと同じ処理を繰り返してしまうことがあります。
+3. However, while an Autorun event is running, the player can't move or trigger other events.
+   So make sure it won't run again after it finishes. Otherwise, it may keep repeating the same process forever.
 
-4. 最初は
-　「文章を表示する」→「変数やセルフ変数を変える」→「[自動実行]でない2ページ目に切り替わって、もう起動しなくなる」
-　のような、「1回動いたら終わる[自動実行]イベント」を作ってみると分かりやすいですよ。
+4. To see how Autorun events work, try making a one-time Autorun event like this:
+   1. Show a message
+   2. Change a variable's value
+   3. Switch to Page 2, which doesn't use the Autorun Trigger, so the event won't start again
 
-　※[自動実行]イベントは、[決定キー]イベントや[プレイヤー/イベント接触]イベントが実行されている間は起動しません！　その逆も同様です。次の[並列実行]イベントと違い、これらは同時に1つしか実行されないのです。
+By the way, Autorun events won't start while an event with the "Confirm Key" or "Player/Event Touch" Trigger is running. The reverse is also true.
+Unlike "Parallel" events, only one event with any of these three Triggers can run at a time.
 ---
 TITLE:
 起動条件[並列実行]
