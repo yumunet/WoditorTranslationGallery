@@ -1,8 +1,6 @@
 
 <img width="1280" height="640" alt="BannerGithub2" src="https://github.com/user-attachments/assets/ed4ab037-d681-4c0e-b516-3b080d98da95" />
 
-[![Discord badge](https://dcbadge.limes.pink/api/server/https://discord.gg/bFp8kSQHa8?style=social?theme=blurple)](https://discord.gg/bFp8kSQHa8)
-
 # Translation Project for WolfRPGEditor  
 
 This repository contains translations for WolfRPGEditor
@@ -58,13 +56,12 @@ SystemValue.txt - 100%
 
 ## Social media
 
-Join the community of WolfRPGEditor !<br>When there's a release, I'll post it on all the social media below, if I can.
+Join the community of WolfRPGEditor !<br>When there's a release, I'll post it on all the social media below.
+
+Discord - WolfRPGEditor Hub >**Under maintenance; there are no links yet.** 
 
 [ModDB](
-https://www.moddb.com/groups/wolfrpgeditor-community) - wolfrpgeditor community
-
-[Reddit](
-https://www.reddit.com/r/Udita_wolfrpgeditor/?rdt=34274) - r/udita_wolfrpgeditor
+https://www.moddb.com/engines/wolf-rpg-editor) - Wolf RPG Editor's Engine Page
 
 [Bluesky](
 https://bsky.app/profile/woditorgamegallery.bsky.social) - WoditorNews
