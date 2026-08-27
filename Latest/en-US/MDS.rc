@@ -2277,14 +2277,14 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Specify by name (-)", 1256, STATIC, SS_LEFT | WS_CHILD | WS_GROUP, 226, 89, 78, 14 
 }
 
-170 DIALOGEX 0, 0, 453, 364
+170 DIALOGEX 0, 0, 453, 382
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Create Game Data"
 LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
-   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 277, 335, 50, 22 
-   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 336, 335, 50, 22 
+   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 277, 355, 50, 22 
+   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 336, 355, 50, 22 
    CONTROL "No Encryption", 1276, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 16, 92, 55, 10 
    CONTROL "Encrypt Entire Data Folder (Data.wolf only)", 1277, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 16, 103, 145, 10 
    CONTROL "Encrypt Limited Folders (Individual .wolf)", 1278, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 16, 137, 203, 10 
@@ -2292,8 +2292,8 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Select which folders to encrypt. Only the highlighted folders will be encrypted.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 129, 152, 85, 37 , WS_EX_STATICEDGE
    CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 14, 16, 85, 14 
    CONTROL "", 1061, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 14, 53, 150, 14 
-   CONTROL "◆Game Folder Name (Letters, numbers, or your system's language)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 6, 212, 9 
-   CONTROL "◆Output Folder (Letters and numbers recommended)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 43, 230, 9 
+   CONTROL "◆Game Folder Name (Letters, numbers, or your system's language)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 6, 220, 9 
+   CONTROL "◆Output Folder (Letters and numbers recommended)", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 43, 220, 9 
    CONTROL "Pick Folder", 1412, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 167, 53, 46, 14 , WS_EX_STATICEDGE
    CONTROL "Encryption Settings", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 79, 215, 284 
    CONTROL "←All necessary game data (and .exe) will be copied to this folder.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 103, 17, 124, 19 , WS_EX_STATICEDGE
@@ -2315,7 +2315,9 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1891, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 240, 14, 165, 14 
    CONTROL "Set Icon", 1413, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 409, 14, 38, 14 , WS_EX_STATICEDGE
    CONTROL "- A single transparent 32x32 (.ico) icon is strongly recommended.\r\n- Changing the icon also removes the copyright information from GamePro.exe, further reducing traces of this software.\r\n- The EXE icon may appear outdated. PC restart may be required.", 1893, STATIC, SS_LEFT | SS_SUNKEN | WS_CHILD | WS_VISIBLE | WS_GROUP, 234, 30, 216, 37 
-   CONTROL "Lock Game.exe Version from [Latest] to [<VER>] (Recommended)\r\nStable for future updates. Can be changed later in Basic Game Settings.", 1902, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 226, 306, 224, 26 , WS_EX_STATICEDGE
+   CONTROL "Lock Game.exe Version from [Latest] to [<VER>] (Recommended)\r\nStable for future updates. Can be changed later in Basic Game Settings.", 1902, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 226, 304, 224, 20 , WS_EX_STATICEDGE
+   CONTROL "Allow Browser Woditor Use (Data.wolf only recommended)\r\n  Adds BrowserWoditor.dat to the BasicData folder", 1903, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 226, 329, 196, 20 , WS_EX_STATICEDGE
+   CONTROL "Visit\r\nPage", 2023, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 423, 328, 27, 23 
 }
 
 171 DIALOGEX 0, 0, 249, 90
@@ -2711,8 +2713,8 @@ CAPTION "Pick Transfer Destination"
 LANGUAGE LANG_JAPANESE, 0x1
 FONT 9, "MS Shell Dlg"
 {
-   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 281, 235, 50, 14 
-   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 340, 234, 50, 14 
+   CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 281, 228, 50, 21 
+   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 340, 231, 50, 14 
    CONTROL "", 1581, "SysTreeView32", TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_HSCROLL | WS_TABSTOP, 4, 16, 117, 215 
    CONTROL "2x", 1588, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_VISIBLE, 115, 0, 25, 15 
    CONTROL "1x", 1582, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_VISIBLE, 140, 0, 25, 15 
@@ -2725,10 +2727,10 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Selected Position: Parameters are displayed here.", 1254, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 61, 233, 188, 18 , WS_EX_STATICEDGE
    CONTROL "Precise Position (1 tile = 2 units)", 1587, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 259, 3, 125, 10 
    CONTROL "Stay in Same Map", 1589, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 5, 3, 91, 10 
-   CONTROL "Return to Event Position", 1942, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 311, 233, 81, 19 
+   CONTROL "Return to Event Position", 1942, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 312, 230, 81, 19 
 }
 
-187 DIALOGEX 0, 0, 159, 229
+187 DIALOGEX 0, 0, 159, 241
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Command Search"
 LANGUAGE LANG_JAPANESE, 0x1
@@ -2742,18 +2744,19 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1605, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 41, 22, 61, 13 
    CONTROL "", 1606, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 84, 22, 10, 14 
    CONTROL "Search (+Shift: backward)", 1603, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 37, 91, 17 
+   CONTROL "[Search] Show All Results (in new window)", 2021, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 75, 147, 12 , WS_EX_STATICEDGE
    CONTROL "Replace (Next)", 1608, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 98, 37, 59, 17 
-   CONTROL "Command Texts\r\n (Takes a long time / Cannot be replaced)", 1283, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 87, 148, 20 
-   CONTROL "Strings in Commands", 1284, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 6, 107, 148, 12 
-   CONTROL "Variables/Values in Commands\r\n (Unstable as it catches internal values)", 1285, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 6, 119, 148, 20 
-   CONTROL "Common Event Names", 1286, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 6, 139, 148, 10 
-   CONTROL "Search Scope", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 2, 157, 147, 36 
-   CONTROL "Current Event Only", 1599, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 168, 138, 11 
-   CONTROL "All Events (Search across Events)", 1598, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 8, 179, 138, 11 
+   CONTROL "Command Texts\r\n (Takes a long time / Cannot be replaced)", 1283, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 100, 148, 20 
+   CONTROL "Strings in Commands", 1284, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 6, 120, 148, 12 
+   CONTROL "Variables/Values in Commands\r\n (Unstable as it catches internal values)", 1285, BUTTON, BS_AUTORADIOBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 6, 132, 148, 20 
+   CONTROL "Common Event Names", 1286, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 6, 152, 148, 10 
+   CONTROL "Search Scope", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 2, 169, 147, 36 
+   CONTROL "Current Event Only", 1599, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 180, 138, 11 
+   CONTROL "All Events (Search across Events)", 1598, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 8, 191, 138, 11 
    CONTROL "Search For:", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 9, 36, 9 
-   CONTROL "Variable information is displayed here.", 1254, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 198, 145, 30 , WS_EX_STATICEDGE
+   CONTROL "Variable information is displayed here.", 1254, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 6, 210, 145, 30 , WS_EX_STATICEDGE
    CONTROL "Specify variables by reference value.\r\n (Example: 1600004 = This Event's CSelf4)", 1602, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 56, 150, 18 
-   CONTROL "Search Target", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 2, 76, 155, 76 
+   CONTROL "Search Target", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 2, 89, 155, 76 
 }
 
 188 DIALOGEX 0, 0, 545, 349
@@ -3389,6 +3392,81 @@ FONT 9, "MS Shell Dlg"
    CONTROL "↑ Prev", 1982, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 117, 37, 17 
    CONTROL "Next ↓", 1983, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 46, 117, 37, 17 
    CONTROL "", 1984, EDIT, ES_LEFT | ES_MULTILINE | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 89, 24, 175, 110 , WS_EX_CLIENTEDGE
+}
+
+1692 DIALOGEX 0, 0, 620, 394
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text Comparison"
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Shell Dlg"
+{
+   CONTROL "A change request was received from an MCP client.\r\nThe current content will be saved in the MCP_Backup folder before applying.", 1985, STATIC, SS_CENTER | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 36, 7, 209, 57 , WS_EX_STATICEDGE
+   CONTROL "Auto Import", 1993, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 416, 13, 48, 8 
+   CONTROL "", 1994, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 468, 11, 48, 75 
+   CONTROL "5s left", 1995, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 523, 13, 30, 8 
+   CONTROL "Save After Auto Import", 2005, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 439, 27, 100, 10 
+   CONTROL "Current Content", 1986, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 90, 296, 10 
+   CONTROL "Content After Import", 1987, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 314, 90, 81, 10 
+   CONTROL "", 2008, "SysTabControl32", TCS_TABS | WS_CHILD | WS_TABSTOP, 10, 75, 600, 14 
+   CONTROL "", 2009, STATIC, SS_BLACKRECT | SS_NOTIFY | WS_CHILD | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 10, 101, 296, 287 
+   CONTROL "", 2010, STATIC, SS_BLACKRECT | SS_NOTIFY | WS_CHILD | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 314, 101, 296, 287 
+   CONTROL "", 1989, LISTBOX, LBS_NOTIFY | LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | LBS_NODATA | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 10, 101, 296, 287 
+   CONTROL "", 1990, LISTBOX, LBS_NOTIFY | LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | LBS_NODATA | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 314, 101, 296, 287 
+   CONTROL "Lines: 0 added / 0 deleted / 0 modified", 1988, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 250, 16, 143, 12 , WS_EX_STATICEDGE
+   CONTROL "Previous Change", 1991, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 255, 32, 63, 18 
+   CONTROL "Next Change", 1992, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 326, 32, 63, 18 
+   CONTROL "Import", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 415, 52, 63, 22 
+   CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 490, 52, 63, 22 
+   CONTROL "", 2011, BUTTON, BS_GROUPBOX | WS_CHILD, 410, 3, 150, 40 
+   CONTROL 1696, 2012, STATIC, SS_BITMAP | WS_CHILD, 3, 17, 32, 37 , WS_EX_STATICEDGE
+}
+
+1693 DIALOGEX 0, 0, 298, 157
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MCP Server"
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Shell Dlg"
+{
+   CONTROL "", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 10, 40, 277, 49 
+   CONTROL "[In development for Version 4] Configure your AI agent to use the URL below as its MCP server. The agent can then view and modify project data, create maps and Map/Common Events, and edit databases.", 1996, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 9, 9, 276, 28 , WS_EX_STATICEDGE
+   CONTROL "Status: Stopped", 1997, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 104, 52, 77, 10 , WS_EX_STATICEDGE
+   CONTROL "MCP Server URL", 1998, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 19, 54, 73, 10 
+   CONTROL "", 1999, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 23, 66, 196, 14 
+   CONTROL "Copy URL", 2000, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 223, 66, 53, 16 
+   CONTROL "Allow AI to Write [review before writing / use at your own risk!]", 2007, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 95, 239, 10 , WS_EX_STATICEDGE
+   CONTROL "", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 11, 89, 248, 38 , WS_EX_TRANSPARENT
+   CONTROL "Auto Import", 2003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 32, 112, 48, 10 
+   CONTROL "", 2004, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 82, 110, 64, 75 
+   CONTROL "Save After Auto Import", 2006, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 161, 111, 95, 10 
+   CONTROL "Start", 2001, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 160, 132, 64, 18 
+   CONTROL "Stop", 2002, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 234, 132, 54, 18 
+   CONTROL "WOLF RPG Editor Data Specification provided by K-Shin07  2026/XX/XX", 2005, STATIC, SS_CENTER | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 3, 136, 123, 18 , WS_EX_STATICEDGE
+}
+
+1697 DIALOGEX 0, 0, 420, 232
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MCP Change History / Restore"
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Shell Dlg"
+{
+   CONTROL "", 2013, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 7, 7, 80, 90 
+   CONTROL "", 2014, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 92, 7, 240, 13 
+   CONTROL "0 entries", 2020, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 338, 9, 75, 10 
+   CONTROL "", 2015, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 24, 406, 158 
+   CONTROL "Select a history entry and click \"Restore to This Point\" to restore the content to its state before that change.", 2016, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 186, 406, 18 
+   CONTROL "View Diff", 2017, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 207, 66, 18 
+   CONTROL "Restore to This Point", 2018, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 79, 207, 128, 18 
+   CONTROL "Open Backup Folder", 2019, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 213, 207, 96, 18 
+   CONTROL "Close", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 363, 207, 50, 18 
+}
+
+1698 DIALOGEX 0, 0, 515, 299
+STYLE DS_SHELLFONT | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Search Results (Double-click to jump to that line)"
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Shell Dlg"
+{
+   CONTROL "", 2022, LISTBOX, LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 3, 2, 508, 295 
 }
 
 30721 DIALOG 9, 26, 183, 70
@@ -5958,7 +6036,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11809, 	"Update data"
   11810, 	"If a jump-to-label command targets a label that is in branches 1-4 of Condition (Number)\r\nthat include an \"Else\" case, execution will move to the \"Else\" branch after the targeted\r\nbranch finishes.\r\nPlease be careful when using jump-to-label commands that target labels in Condition\r\nbranches. (This behavior is for processing speed optimizations.)"
   11811, 	"Caution: Label Function"
-  11812, 	"If you enter a Debug Text using the following commands, the information\r\nwill be displayed in the \"Debug Window\" during gameplay.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it has been updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture-related command is executed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is executed on the leader.\r\n    If the value is 0 or greater, the map event with that ID\r\n    will be monitored instead.\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n   Displays a list of the top 10 highest-load events (TOP) and their\r\n   processing times, updated every 1 frame (FRAME).\r\n   Increasing the \"FRAME\" value reduces the update frequency, and the\r\n   processing times during that period are added together.\r\n   Changing \"ON\" to \"ON2\" disables display in the Debug Window (the\r\n   output can only be retrieved via the System String SysS82).\r\n   Adding \":OVER=1.0\" shows only events taking 1.0 ms or longer.\r\n   Adding \":NO_TITLE\" hides the first line.\r\n   Note: This feature increases processing load. It is recommended to\r\n   turn it off when releasing your project."
+  11812, 	"If you enter a Debug Text in one of the following formats, the information\r\nwill be displayed in the Debug Window while playtesting.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it is updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture-related command is executed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is assigned to it.\r\n    If the value is 0 or greater, the Map Event with that ID\r\n    is monitored instead.\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n   Displays a list of the top 10 events by processing load and their\r\n   processing times, updated every 1 frame.\r\n   - Increasing \"FRAME\" reduces the update frequency, with\r\n     processing times combined over that period.\r\n   - Replacing \"ON\" with \"ON2\" stops output to the Debug Window.\r\n     (Output can then only be retrieved via the System String SysS82.)\r\n   - Replacing \"ON\" with \"FORCE\" or \"FORCE2\" (equivalent to ON2)\r\n     enables monitoring even when not playtesting.\r\n   - Adding \":OVER=1.0\" shows only events taking 1.0 ms or longer.\r\n   - Adding \":NO_TITLE\" hides the first line.\r\n   Note: Monitoring increases event processing load."
   11813, 	"Debug Text Command Tips"
   11814, 	"The data could not be loaded because it is protected by a newer version of the protection.\r\n\r\nPlease update Editor to the latest version."
   11815, 	"■Game.exe v3.310\r\n  ●Fixed a bug where waiting time did not occur when \"Wait\" was executed during \"Prepare Transition\".\r\n  If you want to revert to the old behavior, set \"Adjust Game.exe Version\" to \"Old Version 3.300\" (\"Wait\" during \"Prepare Transition\" will be almost disabled).\r\n  ●Pixel Movement is now in beta. In the old alpha version of Pixel Movement, direction changes and animations did not work with 4-way sprites, but did work with 8-way sprites, and T/TX character sprites did not animate with either 4-way or 8-way sprites.\r\n  You can revert to that behavior by setting \"Adjust Game.exe Version\" to \"Old Version 3.300\" or earlier."
@@ -6522,6 +6600,218 @@ STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
   12240, 	" / [Without Effect Adjustments]"
+  12241, 	"MCP server started.\r\nhttp://127.0.0.1:%d/woditor_mcp"
+  12242, 	"Failed to start the MCP server.\r\n%s"
+  12243, 	"MCP server stopped."
+  12244, 	"MCP Common Event Change"
+  12245, 	"MCP Database Change"
+  12246, 	"MCP Basic Game Settings Change"
+  12247, 	"MCP Map Event Change"
+  12248, 	"MCP Save Request"
+  12249, 	"A request to modify Common Events %d-%d was received from an MCP client."
+  12250, 	"A request to modify %s Types %d-%d was received from an MCP client."
+  12251, 	"A request to modify the Basic Game Settings was received from an MCP client."
+  12252, 	"A request to modify events on the current map was received from an MCP client."
+  12253, 	"\r\n\r\nThe current content will be saved in MCP_Backup before applying."
+  12254, 	"\r\nApply the changes?"
+  12255, 	"A request to save the project was received from an MCP client.\r\n\r\nSave the current edits?"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12256, 	"\r\n\r\nDiff preview:\r\n"
+  12257, 	"...diff output was truncated...\r\n"
+  12258, 	"(No text diff)\r\n"
+  12259, 	"Do you want to open the official Browser Woditor page (ruka's Ci-en)?\r\n\r\nhttps://ci-en.net/creator/12702"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12326, 	"Lines: %d added / %d deleted / %d modified"
+  12327, 	"No text differences."
+  12331, 	"MCP Server [%s]"
+  12332, 	"MCP Server"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12338, 	"Running"
+  12339, 	"Stopped"
+  12340, 	"Status: %s"
+  12341, 	"http://localhost:%d/woditor-mcp"
+  12342, 	"A request to modify Common Event %d was received from an MCP client."
+  12343, 	"A request to modify %s Type %d [%s] was received from an MCP client."
+  12344, 	"A request to modify %s Type %d [%s], Data %d was received from an MCP client."
+  12349, 	"Off"
+  12350, 	"1s"
+  12351, 	"3s"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12352, 	"5s"
+  12353, 	"10s"
+  12354, 	"%ds left"
+  12355, 	"Auto Import Off"
+  12356, 	"MCP Map Change"
+  12357, 	"A request to modify the current map was received from an MCP client."
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12368, 	"MCP Map Creation"
+  12369, 	"A request to create a new map was received from an MCP client.\r\n\r\nMap ID: %d\r\nName: %s\r\nFile: %s\r\n\r\nCreate this map?"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12462, 	"Read mode. For kind=database: type_list/summary/schema/data_list/data/data_detail (data_detail adds a patch conflict token). For kind=asset: info/image/audio/text; text is limited to UTF-8 .txt files under Data/Text and returns structure, references, and content_state_token for conflict-checked apply_text. For kind=map_tile_image: info/sheet/tile; image means sheet unless a tile ID is provided."
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12466, 	"The requested asset mode is not supported for this file type."
+  12467, 	"Asset file is larger than max_bytes, so file content was not returned."
+  12471, 	"Map Comparison"
+  12472, 	"TXT Comparison"
+  12473, 	"Map Changes: %d tiles / Showing %d/%d"
+  12474, 	"No map tile differences."
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12514, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/portal.html"
+  12515, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/06valueget.html"
+  12516, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/06specialword.html"
+  12517, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/"
+  12518, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/guide/"
+  12519, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/02gamesetting.html#picture_ver"
+  12520, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/02ver_ajust.html"
+  12521, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/04ev_string_specialcode.html#secret_code"
+  12522, 	"https://smokingwolf.github.io/tool_wolf_rpg_editor/help/04ev_keyinput.html#keycode"
+  12523, 	"The database has been changed.\r\nSave before closing?"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12528, 	"MCP Change History / Restore"
+  12529, 	"MCP Change History / Restore"
+  12530, 	"Close"
+  12531, 	"[Restored]"
+  12532, 	"◆ Restore from Backup: "
+  12533, 	"Target"
+  12534, 	"Date/Time"
+  12535, 	"Change Description (AI-reported intent)"
+  12536, 	"Target: All"
+  12537, 	"Common Events"
+  12538, 	"Database"
+  12539, 	"Map"
+  12540, 	"Basic Game Settings"
+  12541, 	"%d entries"
+  12542, 	"Common Ev %d"
+  12543, 	"Common Ev %d-%d"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12544, 	"%s Type %d"
+  12545, 	"%s Type %d Data %d"
+  12546, 	"%s Types %d-%d"
+  12547, 	"User DB"
+  12548, 	"Variable DB"
+  12549, 	"System DB"
+  12550, 	"Map %s"
+  12551, 	"Map %s Ev%d"
+  12552, 	"Basic Game Settings"
+  12553, 	"Select a history entry and click \"Restore to This Point\" to return the content to its state before that change. A new [Restored] entry is added at the top when you restore, so you can undo the restore at any time."
+  12554, 	"Selected: %s ─ This will return the content to its state before this change."
+  12555, 	"Selected: %s ─ Cannot restore because the backup file was not found."
+  12556, 	"Restored. A [Restored] entry was added at the top. Restoring from it returns the content to the state before this restore (after the original change)."
+  12557, 	"Undo [Restored] change: %s (Target: %s)"
+  12558, 	"The backup file for this history entry could not be found."
+  12559, 	"Failed to load the backup file.\r\n%s"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12560, 	"The restore was not applied.\r\n%s"
+  12561, 	"This history type does not support automatic restore. Check the TXT files in the Backup folder manually."
+  12562, 	"MCP Backup Diff"
+  12563, 	"Differences from the backup for %s. (Left = current / Right = content after restoring to this point) This window is view-only."
+  12564, 	"This backup is for map \"%s\". Open that map to view the differences.\r\n(\"Restore to This Point\" automatically opens the map before showing the confirmation dialog.)"
+  12565, 	"The DATATYPE in the DB TXT is invalid. Numeric items must be consecutive starting at 1000, and string items at 2000, with no duplicates or gaps."
+  12566, 	"Set to true only when appending consecutive Common Events or tilesets at the end of the current list. You cannot extend the existing range from the middle or create gaps in the IDs."
+  12567, 	"\r\n\r\nNote: The Common Event list will be extended at the end. Added IDs remain in the project structure after applying."
+  12568, 	"An array of steps executed in order by test_play action=run_scenario. You can specify input, step_logic (frames/keys/pause_after/timeout_ms), expect_var, wait_until_var (scope/index/op/value/timeout_ms/poll_ms), message checks, error checks, and screenshot. Stops at the first failure."
+  12569, 	"Maximum time in milliseconds to wait for the specified frames to complete with test_play action=step. Can be used only when launching MCP automated testing."
+  12572, 	"F1-F12 cannot be used in MCP AI input or scenarios. They may trigger WOLF engine or editor functions in addition to project input. Use non-conflicting basic keys or test_play game_args."
+  12573, 	"Invalid test_play game_args. Specify an array of up to 32 strings; each must be a \"--long-option\" with no control characters. Option names may contain only ASCII letters, digits, _, and -. Limits: 1024 characters per item and 8192 total. --mcp-*, --wolf-*, engine-reserved names, duplicate option names, and quotation marks are not allowed."
+  12574, 	"test_play game_args can be specified only when launching a new Game.exe. Stop the current playtest, then retry action=start with game_args."
+  12575, 	"For action=start only. Passes project-specific \"--long-options\" to a newly launched Game.exe once, making them readable from SysS75. Stop first if Game.exe is already running. The effective value is returned in game_args_json for start/status."
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12581, 	"MCP Tileset TXT Apply"
+  12582, 	"A request to modify tilesets %d-%d was received from an MCP client."
+  12583, 	"Specify tileset_id and text. Only existing tilesets or consecutive additions starting at the end of the current list can be targeted."
+  12584, 	"Failed to load the tileset TXT. Reread the current TXT with read_data kind=tileset."
+  12585, 	"The MCP tileset TXT structure is invalid. Reread the current format with read_data kind=tileset and generate the complete text without omissions. This MCP-only validation does not affect manual TXT imports."
+  12586, 	"The target range in the tileset TXT is outside the current list. Adding at the end is possible only when allow_expand=true is specified and the range starts at the current count."
+  12587, 	"\r\nThe tileset list will be extended at the end. The order of existing tileset IDs will not change.\r\n"
+  12588, 	"An internal error occurred during MCP processing, so only this request was canceled. Open and resave the target data in the Editor, then retry. If it recurs, report it with the tool name and arguments."
+  12589, 	"Map Event %d:%s  Page %d  Line %d  %s"
+  12590, 	"Common Event %d:%s  Line %d  %s"
+  12591, 	"Event %d:%s  [Event Name]"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12592, 	"Processing was canceled before applying because AutoTXT/TXT or the change intent contains characters indicating data loss (a Unicode replacement character, NUL, invalid control characters, question marks replacing existing Japanese text, or typical garbled characters). Do not pass the text through the standard output of exec_command or similar tools; reread the Unicode text directly with read_data and retry. If the question marks are intentional, explicitly specify suppress_warnings:[\"W18\"]."
+  12593, 	"There are two backslashes immediately before a recognized string code. In AutoTXT text, use one backslash, as in \\cself[0] or \\v[1] (this differs from escaping in a JSON string literal). Unless you intend to display the string code literally, reduce the two backslashes to one. If intentional, you can specify suppress_warnings:[\"W17\"]."
+  12594, 	"An integer array for retrieving non-contiguous IDs in input order (1-64 entries; no duplicates). Available for common_event or database mode=data/data_detail. For a contiguous range, use id and count as before; do not specify ids together with them."
+  12595, 	"Invalid ids. Specify an array of 1-64 unique integer IDs, and do not specify it together with id/count/range. Check that the IDs exist and retry."
+  12596, 	"For database mode=data/data_detail, specify id as the range start and count as the number of entries. base_index, row_start, and row_count are for map_tile_image only and cannot be used with database."
+  12597, 	"The Common Event ID at which to resume a commands search. Specify next_common_id from the previous result. Defaults to 0."
+  12598, 	"The command index at which to resume a commands search. Specify next_command_index from the previous result together with start_common_id. Defaults to 0."
+  12599, 	"The commands search resume position is out of range. Specify next_common_id and next_command_index from the previous result unchanged, or reset both to 0 and retry."
+  12600, 	"\r\ncomplete=%d\r\nchecked=%d\r\neffective_max_commands=%d\r\nnext_common_id=%d\r\nnext_command_index=%d\r\n"
+  12601, 	"The string contains consecutive question marks or a character sequence typical of UTF-8/Shift-JIS conversion errors and may be garbled. If the text came through standard output, do not apply it; reread the Unicode text directly with read_data. If the string is valid, you can specify suppress_warnings:[\"W18\"]."
+  12602, 	"The batch retrieval result for ids exceeds 4 MB, so processing was canceled rather than returning truncated AutoTXT/JSON. Reduce the number of entries in ids and retry in multiple requests."
+  12603, 	"MCP processing in progress (%s)"
+  12607, 	"The editor is busy.\nactive_tool=%s\nstarted_at=%s\nelapsed_seconds=%u\nforce_release=0\nrecovery=Wait for the active tool to finish, then retry. Automatic force release is disabled to protect editor data."
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  12608, 	"The internal DB type for DB Management (250) is %s, but the Type specified by name as \"%s\" does not exist in that DB (matches in other DBs: %s). If you copied an existing row, recalculate not only the operator but also the DB target bit (CDB=0 / SDB=256 / UDB=512) for the target DB. If intentional, you can specify suppress_warnings:[\"W19\"]."
+  12609, 	"Invalid DB data patch arguments. For a single patch, omit text and specify data_id, 1-64 entries in changes, and expected_data_token when applying. For multiple patches, do not mix in single-patch arguments; specify data_patches=[{data_id,changes,expected_data_token},...] with 1-64 entries. data_id values must be unique and total changes cannot exceed 1024. First reread the target data and each data_state_token with read_data(kind=database, mode=data_detail, ids=[...])."
+  12610, 	"The DB data patch contains invalid or unnecessary records. Each item_id must be an existing item ID unique within its record; value must be a 32-bit integer for numeric items or a string for string items. null, decimals, garbled characters, NUL, and invalid control characters cannot be used. Each record must contain at least one item whose value differs from the current value; remove unchanged records from data_patches."
+  12611, 	"The target DB data has changed since it was read. No confirmation dialog was shown, and no backup was created. Reread the latest value and data_state_token with read_data(kind=database, mode=data_detail, ...), review the changes, then retry."
+  12612, 	"The zero-based Data ID for database mode=data_detail, a single data patch, or each element of data_patches."
+  12613, 	"For kind=database value patches only. For one patch, specify 1-64 {item_id,value} entries in changes; for multiple patches, specify 1-64 {data_id,changes,expected_data_token} entries in data_patches. data_id values must be unique, total changes cannot exceed 1024, and text cannot be specified at the same time. Item definitions, the number of Data entries, and Data names cannot be changed."
+  12614, 	"A per-record conflict-check token for DB value patches. Specify the data_state_token exactly as returned for each data_id by the immediately preceding read_data mode=data_detail or validate_text call. Required for every element of data_patches."
+  12615, 	"MCP Data/Text Update"
+  12616, 	"A request to update Data/%s was received from an MCP client."
+  12617, 	"For kind=text_asset, specify the file and text parameters. Only existing UTF-8 .txt files under Data/Text can be updated."
+  12618, 	"The Data/Text file has changed since it was read. No confirmation was shown, no backup was created, and nothing was written. Reread the latest content with read_data and retry with the new content_state_token."
+  12619, 	"Failed to create a backup or atomically save the Data/Text file. The original file was intentionally not overwritten. Check free space and file permissions, then retry."
+  12620, 	"For kind=text_asset only. Specify the content_state_token returned by read_data mode=text. It is required for apply_text; updates are rejected if it is stale."
+  12621, 	"Could not create a DB backup before applying, so processing was canceled without changing DB data. Check free space and write permissions for MCP_Data/Backup, then retry."
 }
 
 STRINGTABLE
