@@ -1675,15 +1675,15 @@ FONT 9, "MS Shell Dlg"
 {
    CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 87, 20, 51, 12 
    CONTROL "", 1015, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 103, 19, 9, 11 
-   CONTROL "Salvar", 1315, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_VISIBLE | WS_GROUP, 65, 4, 31, 13 
-   CONTROL "Carregar", 1316, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_VISIBLE, 96, 4, 31, 13 
-   CONTROL "Replay", 1317, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD, 127, 4, 26, 13 
+   CONTROL "Salvar", 1315, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_GROUP, 227, 55, 26, 13 
+   CONTROL "Carregar", 1316, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD, 227, 47, 26, 13 
+   CONTROL "Replay", 1317, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD, 227, 42, 26, 13 
    CONTROL "Salvar/Carregar", 1285, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 57, 10 
    CONTROL "Ler dos dados de Saves [Número ou String]", 1276, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 7, 58, 147, 10 
    CONTROL "Escrever para o Dados de Save nº", 1277, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 7, 90, 119, 10 
    CONTROL "", 1279, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 12, 70, 79, 100 
    CONTROL "Atualizar", 1069, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 186, 0, 49, 8 
-   CONTROL "Alvo do Dados de Save", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 22, 76, 9 
+   CONTROL "Alvo do Dados de Save", 14011, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 23, 76, 9 
    CONTROL "Ler/Escrever Dados de Save específico.", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 45, 246, 83 
    CONTROL "", -1, STATIC, SS_LEFT | WS_CHILD | WS_GROUP, 130, 22, 5, 9 
    CONTROL "", 1061, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 123, 71, 41, 12 
@@ -1702,13 +1702,15 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1064, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 100, 102, 47, 12 
    CONTROL "", 1019, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 116, 92, 9, 11 
    CONTROL "Nome da variável é mostrado aqui", 1254, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 130, 159, 24 , WS_EX_STATICEDGE
-   CONTROL "Os dados do Save 0 são temporário, portanto não use.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 146, 20, 107, 22 
+   CONTROL "Os dados do Save 0 são temporário, portanto não use.", 14012, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 147, 20, 107, 25 
    CONTROL "Carregar var. [X]", 1290, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 100, 116, 60, 10 
    CONTROL "", 1065, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 163, 102, 53, 13 
    CONTROL "", 1020, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 204, 111, 9, 11 
    CONTROL "Inserir", 1068, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 173, 130, 49, 26 
    CONTROL "Valor manual", 1295, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 163, 91, 62, 10 
    CONTROL "[!]", 1903, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 133, 44, 13, 12 
+   CONTROL "", 2024, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 64, 6, 178, 100 
+   CONTROL "イベント実行位置も保存する", 14010, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_TABSTOP, 72, 34, 150, 9 
 }
 
 156 DIALOGEX 0, 0, 211, 144
@@ -5958,7 +5960,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   11751, 	"BOM"
   11752, 	"Interrupção forçada do evento principal"
   11753, 	"■[Pro] "
-  11754, 	"Falha na criptografia do arquivo\r\nisso pode falhar se contém caracteres não são caracteres alfanumérico de 1-byte"
+  11754, 	"以下のファイルまたはフォルダを暗号化できませんでした。"
   11755, 	"Falha na criptografia dos seguintes arquivos:\r\n\r\n<FILE>\r\n\r\nSe o arquivo é Japonês, tente mudar a localização para Japonês (Página do código \".932\") \r\nTente também alterar a criptografia. \r\n  =>  Localização atual:  <LANG>"
   11756, 	"Criptografia da v<X>"
   11757, 	"Use a criptografia mais recentes [Atual v<X>]"
@@ -6034,7 +6036,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 {
   11808, 	"A função de proteção da chave foram atualizada. \r\nProtege usando a último proteção da mesma chave proteção atual para Conf. Básica do jogo, Eventos Comuns, todos os DB, dados do Tileset."
   11809, 	"Atualizar dados"
-  11810, 	"- Se pular para o rotulo dentro do ramo 1 até 4 do \"Condição(Número)\" que tenha \"Else\",\r\n o processo irá pular para \"Else\" quando o processamento daquele ramo é completado!\r\n Tenha cuidado quando pular para o rotulo dentro do ramo de condição.\r\n (Feito para otimizar processo.)"
+  11810, 	"・【上記以外の場合】がある【条件分岐】より上に置いた【ラベルに飛ぶ】で、その条件判定を通らず【1】～【4】分岐内へ入ると、\r\n イベントや条件の種類によっては、ジャンプ先の分岐処理後に【上記以外の場合】まで実行されることがあります。\r\n ※いったん【分岐終了】まで通った後、下側から戻る場合は通常起きません。"
   11811, 	" [Função importante da rotulo!] "
   11812, 	"Se inserir o Debug no Comando a seguir, são mostrada as Informação na \"Janela de Debug\" durante a execução do テストプレイ. \r\n (Entra apenas 1 linha de cada vez, corretamente letras capitalizada e minuscula) \r\n\r\nValWatch:ON=2000009\r\n→Depois da execução, obter o valor da variável normal 9 (2000009),\r\n    visualiza o valor depois de ser acessado.\r\n\r\nPictureWatch:ON=123 Depois da execução, observa a imagem 123, \r\n visualiza as exatas informações ao fazer o processamento de imagem neste ID.\r\n\r\nMoveWatch:ON=-2\r\n → Depois da execução, exibe informação de ações feitas pelo o Líder (-2) e pelo evento de mapa (Maior ou igual que 0).\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n → 実行後、「1」フレームごとに\r\n　負荷上位「10」位までのイベントリストと\r\n　かかった処理時間を表示します。\r\n　FRAMEを増やすと表示頻度が減り、\r\n　その間の処理時間が合算されて表示されます。\r\n → ONをON2にするとデバッグウィンドウで表示されなくなります。\r\n　（システム文字列 SysS82 でのみ取得できます）\r\n → 「ON」を「FORCE」や「FORCE2」(ON2相当)にすると、\r\n　「非テストプレイ時にも」モニターをオンにできます。\r\n → 「:OVER=1.0」を追加すると1.0ms以上のものだけ表示\r\n → 「:NO_TITLE」を追加すると先頭行を非表示に\r\n → ※なお計測中はイベント負荷が高くなるので注意"
   11813, 	" [Truque de texto de debug] "
@@ -6624,6 +6626,8 @@ LANGUAGE LANG_JAPANESE, 0x1
   12257, 	"...diff output was truncated...\r\n"
   12258, 	"(No text diff)\r\n"
   12259, 	"ブラウザウディタ公式（ruka様のCi-en）ページを開きますか？\r\n\r\nhttps://ci-en.net/creator/12702"
+  12260, 	"セーブ (Save/SaveDataXX.savに)"
+  12261, 	"ロード (Save/SaveDataXX.savから)"
 }
 
 STRINGTABLE
@@ -6799,12 +6803,12 @@ STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
   12608, 	"DB操作(250)の内部DB種別は%sですが、名前指定されたタイプ「%s」はそのDBに存在しません（他DBでの一致: %s）。既存行を複製した場合は、演算子だけでなくDB target bit（CDB=0 / SDB=256 / UDB=512）も対象DBに合わせて再計算してください。意図的なら suppress_warnings:[\"W19\"] を指定できます。"
-  12609, 	"DBデータpatchの引数が不正です。単一ならtextを省略してdata_id、1件以上64件以下のchanges、apply時のexpected_data_tokenを指定してください。複数なら単一用引数と混在させず、data_patches=[{data_id,changes,expected_data_token},...]を1～64件指定してください。data_idは重複不可、changes総数は1024件以下です。先にread_data(kind=database, mode=data_detail, ids=[...])で対象データと各data_state_tokenを取り直してください。"
-  12610, 	"DBデータpatchに不正または変更不要なレコードがあります。各item_idは同一レコード内で重複しない既存項目ID、valueは数値項目なら32bit整数、文字列項目なら文字列にしてください。null・小数・文字化け文字・NUL・不正制御文字は使用できません。各レコードに現在値と異なる項目を1件以上含め、変更不要なレコードはdata_patchesから除外してください。"
+  12609, 	"DBデータpatchの引数が不正です。textを省略し、単一ならdata_id、changesまたはdata_name（別名name）、apply時のexpected_data_tokenを指定してください。data_nameとnameの併記は不可です。複数なら単一用引数と混在させず、data_patches=[{data_id,expected_data_token,changes?,data_name?},...]を1～64件指定してください。名前のみならchangesを省略または空配列にできます。data_idは重複不可、changesは各64件・総数1024件以下です。read_data(kind=database, mode=data_detail, ids=[...])で対象とtokenを確認してください。"
+  12610, 	"DBデータpatchに不正または変更不要なレコードがあります。item_idは重複しない既存項目ID、valueは項目型に合う32bit整数または文字列にしてください。data_name/nameは直接保持名（id_load_type=0）用の文字列で、空文字は名前を消します。名前の改行・タブ・半角ダブルクォート・予約文字列<<COMMA>>、全値の文字化け文字・NUL・不正制御文字は使用できません。文字列と名前の合計は4Mi文字以下です。data_detailとschemaを読み直し、各レコードの名前か項目値に現在値との差を含めてください。"
   12611, 	"対象DBデータは読取後に変更されています。確認画面やバックアップ作成は行っていません。read_data(kind=database, mode=data_detail, ...)で最新値とdata_state_tokenを取り直し、変更内容を再確認してから実行してください。"
   12612, 	"database mode=data_detail、単一データpatch、またはdata_patches各要素の0始まりデータIDです。"
-  12613, 	"kind=databaseの値patch専用です。単一ならchangesに1～64件の{item_id,value}、複数ならdata_patchesに1～64件の{data_id,changes,expected_data_token}を指定します。data_idは重複不可、changes総数は1024件以下で、textとは同時指定しません。項目定義・データ行数・データ名は変更できません。"
-  12614, 	"DB値patch専用のレコード別競合検査tokenです。直前のread_data mode=data_detailまたはvalidate_textが各data_idへ返したdata_state_tokenをそのまま指定してください。data_patchesでは各要素に必須です。"
+  12613, 	"kind=databaseのレコード部分更新です。changesは0～64件の{item_id,value}。data_name（別名name、併記不可）は直接保持するDATANAME（id_load_type=0）の文字列で、空文字で消去、省略で維持します。名前だけならchangesを省略/[]にできます。名前に改行・タブ・半角ダブルクォート・<<COMMA>>は使えません。複数はdata_patches=[{data_id,expected_data_token,changes?,data_name?},...]を1～64件。ID重複不可、項目変更は総数1024件以下、文字列と名前は合計4Mi文字以下。各レコードに実変更が必要です。textと同時指定不可。項目定義・行数・名前の参照設定は維持します。"
+  12614, 	"DBレコード部分更新の競合検査tokenです。項目値・保存名・項目定義を検査します。直前のread_data mode=data_detailまたはvalidate_textが各data_idへ返したdata_state_tokenをそのまま指定してください。apply時とdata_patchesの各要素に必須です。"
   12615, 	"MCP Data/Textテキスト更新"
   12616, 	"MCPクライアントから Data/%s の更新要求が届きました。"
   12617, 	"kind=text_assetではfileとtextを指定してください。更新できるのはData/Text内にすでに存在するUTF-8の.txtファイルだけです。"
@@ -6812,6 +6816,30 @@ LANGUAGE LANG_JAPANESE, 0x1
   12619, 	"Data/Textファイルのバックアップ作成または原子的保存に失敗しました。元ファイルを意図的に上書きしていません。空き容量とファイル権限を確認して再実行してください。"
   12620, 	"kind=text_asset専用です。read_data mode=textが返したcontent_state_tokenを指定してください。apply_textでは必須で、古い値なら更新を拒否します。"
   12621, 	"DBの適用前バックアップを作成できなかったため、DBデータを変更せず中止しました。MCP_Data/Backupの空き容量と書込み権限を確認してから再実行してください。"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  14000, 	"メモリーへ一時セーブ"
+  14001, 	"メモリーから読込"
+  14002, 	"メモリー消去"
+  14003, 	"イベント実行位置も保存する"
+  14004, 	"■データをメモリーへ一時セーブ："
+  14005, 	"■データをメモリーから読込："
+  14006, 	"■データのメモリーを消去："
+  14007, 	" [イベント実行位置も保存]"
+  14008, 	"メモリー操作はスロット番号0～99を指定してください。消去のみ-1で全消去できます。"
+  14009, 	"この試験コマンドを編集するにはPRIVATE_DEV版を使用してください。"
+  14013, 	"メモリースロット"
+  14014, 	"0～99番を指定。消去のみ-1で全消去。数値変数も使用できます。"
+  14015, 	"対象セーブデータ"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  14016, 	"※ｾｰﾌﾞﾃﾞｰﾀ0番は一時ﾌｧｲﾙとして扱われるので使用しないでください"
 }
 
 STRINGTABLE
@@ -7199,6 +7227,14 @@ STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
   61888, 	"pixels"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  62001, 	"ファイル名の文字に問題があります。"
+  62002, 	"※この文字が内部的に分割されてしまっているため、ファイル名のこの文字をWindows上で入力し直してください。"
+  62003, 	"※この文字を別の一般的な日本語や半角英数字に書き換えてください。"
 }
 
 STRINGTABLE

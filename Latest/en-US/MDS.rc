@@ -1675,15 +1675,15 @@ FONT 9, "MS Shell Dlg"
 {
    CONTROL "", 1060, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 72, 20, 51, 12 
    CONTROL "", 1015, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 98, 19, 9, 11 
-   CONTROL "Save", 1315, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_VISIBLE | WS_GROUP, 52, 4, 26, 13 
-   CONTROL "Load", 1316, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_VISIBLE, 78, 4, 26, 13 
-   CONTROL "Replay", 1317, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD, 104, 4, 26, 13 
+   CONTROL "Save", 1315, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD | WS_GROUP, 227, 55, 26, 13 
+   CONTROL "Load", 1316, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD, 227, 47, 26, 13 
+   CONTROL "Replay", 1317, BUTTON, BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_CHILD, 227, 42, 26, 13 
    CONTROL "Save/Load", 1285, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 44, 10 
    CONTROL "Read from Save Data (Number or String)", 1276, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 7, 58, 142, 10 
    CONTROL "Write to Save Data", 1277, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 7, 90, 83, 10 
    CONTROL "", 1279, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 12, 70, 79, 100 
    CONTROL "Update", 1069, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_TABSTOP, 186, 0, 49, 8 
-   CONTROL "Target Save Data:", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 22, 62, 9 
+   CONTROL "Target Save Data:", 14011, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 23, 62, 9 
    CONTROL "Read/Write Specific Save Data", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 4, 45, 226, 79 
    CONTROL "", -1, STATIC, SS_LEFT | WS_CHILD | WS_GROUP, 125, 22, 8, 9 
    CONTROL "", 1061, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 118, 71, 41, 12 
@@ -1702,13 +1702,15 @@ FONT 9, "MS Shell Dlg"
    CONTROL "", 1064, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 89, 102, 47, 12 
    CONTROL "", 1019, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 110, 92, 9, 11 
    CONTROL "Variable name is displayed here.", 1254, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 130, 159, 24 , WS_EX_STATICEDGE
-   CONTROL "Caution: Save Data 0 is treated as a temporary file. Do not use it.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 138, 10, 107, 30 
+   CONTROL "Caution: Save Data 0 is treated as a temporary file. Do not use it.", 14012, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 133, 20, 107, 25 
    CONTROL "Load Variable[X]", 1290, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 91, 91, 60, 10 
    CONTROL "", 1065, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 152, 102, 53, 13 
    CONTROL "", 1020, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 193, 111, 9, 11 
    CONTROL "Insert", 1068, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 173, 130, 49, 26 
    CONTROL "Manual Value", 1295, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 153, 91, 62, 10 
    CONTROL "[!] Caution", 1903, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 105, 44, 38, 12 
+   CONTROL "", 2024, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 51, 6, 178, 100 
+   CONTROL "Save Event Execution Point", 14010, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_TABSTOP, 72, 34, 150, 9 
 }
 
 156 DIALOGEX 0, 0, 211, 134
@@ -5958,8 +5960,8 @@ LANGUAGE LANG_JAPANESE, 0x1
   11751, 	"BOM"
   11752, 	"Force Exit Main Running Event"
   11753, 	"■[Pro] "
-  11754, 	"Failed to encrypt the following files.\r\nEncryption may fail if the file name contains characters other than English alphanumeric characters."
-  11755, 	"Encryption of the following files may have failed:\r\n\r\n<FILE>\r\n\r\nNote: If the file name is in Japanese, it may succeed by changing the system locale to Japanese (code page 932)\r\n  => Current system locale: <LANG>"
+  11754, 	"The following file or folder could not be encrypted."
+  11755, 	"The following file may not have been encrypted successfully:\r\n\r\n<FILE>\r\n\r\nNote: If the file name is in Japanese, it may succeed by changing the system locale to Japanese (code page 932)\r\n  => Current system locale: <LANG>"
   11756, 	"Encryption v<X>"
   11757, 	"Use Latest Encryption (v<X>)"
   11758, 	"■Game.exe v3.170\r\n  In a Common Event, the map self variables are now correctly loaded from the map of the destination moved by the \"Transfer\" command. This may change game behavior.\r\n  (Previously, even after a Transfer command, the map self variables of the previous map were loaded until the end of the Common Event.)\r\n  You can revert to the old behavior by setting \"Adjust Game.exe Version\" to \"Old Version 3.155\" or earlier."
@@ -6034,7 +6036,7 @@ LANGUAGE LANG_JAPANESE, 0x1
 {
   11808, 	"The data protection feature has been updated.\r\nThe basic game settings, Common Events, various databases, and tileset data will be re-protected with the latest protection using the same protection key as before."
   11809, 	"Update data"
-  11810, 	"If a jump-to-label command targets a label that is in branches 1-4 of Condition (Number)\r\nthat include an \"Else\" case, execution will move to the \"Else\" branch after the targeted\r\nbranch finishes.\r\nPlease be careful when using jump-to-label commands that target labels in Condition\r\nbranches. (This behavior is for processing speed optimizations.)"
+  11810, 	"If \"Jump to Label\" placed above a Condition command with an Else case is used to enter\r\ncases 1-4 while bypassing that Condition, depending on the event or condition type,\r\nthe Else case may also be executed after the case you jumped to is processed.\r\n\r\nNote: This normally does not occur when returning from below after execution has\r\nalready passed through End once."
   11811, 	"Caution: Label Function"
   11812, 	"If you enter a Debug Text in one of the following formats, the information\r\nwill be displayed in the Debug Window while playtesting.\r\n(Enter exactly one line, with correct capitalization.)\r\n\r\nValWatch:ON=2000009\r\n    Monitors normal variable 9 (2000009) and displays its value\r\n    after it is updated.\r\n\r\nPictureWatch:ON=123\r\n    Monitors picture 123 and displays information whenever\r\n    any picture-related command is executed on that ID.\r\n\r\nMoveWatch:ON=-2\r\n    Monitors the leader (-2) and displays information whenever\r\n    a Move Route is assigned to it.\r\n    If the value is 0 or greater, the Map Event with that ID\r\n    is monitored instead.\r\n\r\nPerformanceMonitor:ON:FRAME=1:TOP=10\r\n   Displays a list of the top 10 events by processing load and their\r\n   processing times, updated every 1 frame.\r\n   - Increasing \"FRAME\" reduces the update frequency, with\r\n     processing times combined over that period.\r\n   - Replacing \"ON\" with \"ON2\" stops output to the Debug Window.\r\n     (Output can then only be retrieved via the System String SysS82.)\r\n   - Replacing \"ON\" with \"FORCE\" or \"FORCE2\" (equivalent to ON2)\r\n     enables monitoring even when not playtesting.\r\n   - Adding \":OVER=1.0\" shows only events taking 1.0 ms or longer.\r\n   - Adding \":NO_TITLE\" hides the first line.\r\n   Note: Monitoring increases event processing load."
   11813, 	"Debug Text Command Tips"
@@ -6624,6 +6626,8 @@ LANGUAGE LANG_JAPANESE, 0x1
   12257, 	"...diff output was truncated...\r\n"
   12258, 	"(No text diff)\r\n"
   12259, 	"Do you want to open the official Browser Woditor page (ruka's Ci-en)?\r\n\r\nhttps://ci-en.net/creator/12702"
+  12260, 	"Save (to Save/SaveDataXX.sav)"
+  12261, 	"Load (from Save/SaveDataXX.sav)"
 }
 
 STRINGTABLE
@@ -6799,12 +6803,12 @@ STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
   12608, 	"The internal DB type for DB Management (250) is %s, but the Type specified by name as \"%s\" does not exist in that DB (matches in other DBs: %s). If you copied an existing row, recalculate not only the operator but also the DB target bit (CDB=0 / SDB=256 / UDB=512) for the target DB. If intentional, you can specify suppress_warnings:[\"W19\"]."
-  12609, 	"Invalid DB data patch arguments. For a single patch, omit text and specify data_id, 1-64 entries in changes, and expected_data_token when applying. For multiple patches, do not mix in single-patch arguments; specify data_patches=[{data_id,changes,expected_data_token},...] with 1-64 entries. data_id values must be unique and total changes cannot exceed 1024. First reread the target data and each data_state_token with read_data(kind=database, mode=data_detail, ids=[...])."
-  12610, 	"The DB data patch contains invalid or unnecessary records. Each item_id must be an existing item ID unique within its record; value must be a 32-bit integer for numeric items or a string for string items. null, decimals, garbled characters, NUL, and invalid control characters cannot be used. Each record must contain at least one item whose value differs from the current value; remove unchanged records from data_patches."
+  12609, 	"Invalid DB data patch arguments. Omit text. For a single patch, specify data_id, changes or data_name (alias: name), and expected_data_token when applying. Do not specify both data_name and name. For multiple patches, do not mix in single-patch arguments; specify data_patches=[{data_id,expected_data_token,changes?,data_name?},...] with 1-64 entries. When changing only the name, changes may be omitted or set to an empty array. data_id values must be unique; changes is limited to 64 entries per patch and 1024 entries total. Check the target and tokens with read_data(kind=database, mode=data_detail, ids=[...])."
+  12610, 	"The DB data patch contains invalid or unnecessary records. Each item_id must be an existing item ID with no duplicates; value must be a 32-bit integer or string matching the item type. data_name/name must be a string for a directly stored name (id_load_type=0); an empty string clears the name. Names cannot contain line breaks, tabs, double quotation marks, or the reserved string <<COMMA>>, and no values may contain garbled characters, NUL, or invalid control characters. The combined length of strings and names must not exceed 4 Mi characters. Reread data_detail and schema, and ensure each record differs from the current value in either its name or item values."
   12611, 	"The target DB data has changed since it was read. No confirmation dialog was shown, and no backup was created. Reread the latest value and data_state_token with read_data(kind=database, mode=data_detail, ...), review the changes, then retry."
   12612, 	"The zero-based Data ID for database mode=data_detail, a single data patch, or each element of data_patches."
-  12613, 	"For kind=database value patches only. For one patch, specify 1-64 {item_id,value} entries in changes; for multiple patches, specify 1-64 {data_id,changes,expected_data_token} entries in data_patches. data_id values must be unique, total changes cannot exceed 1024, and text cannot be specified at the same time. Item definitions, the number of Data entries, and Data names cannot be changed."
-  12614, 	"A per-record conflict-check token for DB value patches. Specify the data_state_token exactly as returned for each data_id by the immediately preceding read_data mode=data_detail or validate_text call. Required for every element of data_patches."
+  12613, 	"For partial record updates with kind=database. changes accepts 0-64 {item_id,value} entries. data_name (alias: name; do not specify both) is a string for a directly stored DATANAME (id_load_type=0); an empty string clears the name, while omission preserves it. When changing only the name, changes may be omitted or set to []. Names cannot contain line breaks, tabs, double quotation marks, or <<COMMA>>. For multiple patches, specify data_patches=[{data_id,expected_data_token,changes?,data_name?},...] with 1-64 entries. data_id values must be unique, item changes are limited to 1024 entries total, and the combined length of strings and names must not exceed 4 Mi characters. Each record must contain an actual change. text cannot be specified at the same time. Item definitions, row count, and name reference settings are preserved."
+  12614, 	"A conflict-check token for partial DB record updates. Checks item values, stored names, and item definitions. Specify the data_state_token exactly as returned for each data_id by the immediately preceding read_data mode=data_detail or validate_text call. Required when applying and for every element of data_patches."
   12615, 	"MCP Data/Text Update"
   12616, 	"A request to update Data/%s was received from an MCP client."
   12617, 	"For kind=text_asset, specify the file and text parameters. Only existing UTF-8 .txt files under Data/Text can be updated."
@@ -6812,6 +6816,30 @@ LANGUAGE LANG_JAPANESE, 0x1
   12619, 	"Failed to create a backup or atomically save the Data/Text file. The original file was intentionally not overwritten. Check free space and file permissions, then retry."
   12620, 	"For kind=text_asset only. Specify the content_state_token returned by read_data mode=text. It is required for apply_text; updates are rejected if it is stale."
   12621, 	"Could not create a DB backup before applying, so processing was canceled without changing DB data. Check free space and write permissions for MCP_Data/Backup, then retry."
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  14000, 	"Temporarily Save to Memory"
+  14001, 	"Load from Memory"
+  14002, 	"Clear Memory"
+  14003, 	"Save Event Execution Point"
+  14004, 	"■Temporarily Save Data to Memory:"
+  14005, 	"■Load Data from Memory:"
+  14006, 	"■Clear Data from Memory:"
+  14007, 	" [Save Event Execution Point]"
+  14008, 	"Specify a memory slot number from 0 to 99. For clearing only, specify -1 to clear all slots."
+  14009, 	"Use the PRIVATE_DEV version to edit this experimental command."
+  14013, 	"Memory Slot"
+  14014, 	"Specify 0-99. For clearing only, -1 clears all slots. Numeric variables can also be used."
+  14015, 	"Target Save Data:"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  14016, 	"Caution: Save Data 0 is treated as a temporary file. Do not use it."
 }
 
 STRINGTABLE
@@ -7199,6 +7227,14 @@ STRINGTABLE
 LANGUAGE LANG_JAPANESE, 0x1
 {
   61888, 	"pixels"
+}
+
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  62001, 	"There is a problem with a character in the file name."
+  62002, 	"Note: This character is split internally. Re-enter this character in the file name in Windows."
+  62003, 	"Note: Replace this character with a common Japanese character or a single-byte alphanumeric character."
 }
 
 STRINGTABLE
