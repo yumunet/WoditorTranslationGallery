@@ -2279,7 +2279,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Specify by name (-)", 1256, STATIC, SS_LEFT | WS_CHILD | WS_GROUP, 226, 89, 78, 14 
 }
 
-170 DIALOGEX 0, 0, 453, 382
+170 DIALOGEX 0, 0, 453, 398
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Create Game Data"
 LANGUAGE LANG_JAPANESE, 0x1
@@ -2320,6 +2320,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "Lock Game.exe Version from [Latest] to [<VER>] (Recommended)\r\nStable for future updates. Changeable later in Basic Game Settings.", 1902, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 226, 304, 224, 20 , WS_EX_STATICEDGE
    CONTROL "Allow Browser Woditor Use (Data.wolf only recommended)\r\nAdds BrowserWoditor.dat to the BasicData folder.", 1903, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 226, 329, 196, 20 , WS_EX_STATICEDGE
    CONTROL "Visit\r\nPage", 2023, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 423, 328, 27, 23 
+   CONTROL "Open Output Folder When Done", 1904, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 287, 381, 114, 12 
 }
 
 171 DIALOGEX 0, 0, 249, 90
@@ -6843,6 +6844,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   14017, 	"■Game.exe v3.729\r\n●[Set Variable+/Picture] Fixed a bug where moving the text position upward in a string picture using special characters such as \"\\my[Y]\" and \"\\ay[Y]\" could cause \"Image Height\" to be smaller than expected. (This also affected picture hit detection.)\r\n●[Set Variable+/Map Event] Fixed a bug where \"Character Sprite Vertical Divisions\" for a map event using a character sprite file ending with \"$.png\" returned 4 instead of 1.\r\n→ If you're using any of these features and they no longer behave as intended, set \"Adjust Game.exe Version\" to \"Old Version 3.692\" or earlier."
   14018, 	"Common Events have been changed.\r\nSave before closing?\r\n(If not, changes will be lost.)"
   14019, 	"■Game.exe v3.730\r\n●[Set String] The special code \"FIND_PATH\" now supports looping maps. (By default, it returns a path that accounts for map looping. New options such as /LOOP_XY and /NO_LOOP were also added.)\r\n●[Move Route] \"Auto Move\" now supports looping maps.\r\n→ If you want to revert to the old behavior, set \"Adjust Game.exe Version\" to \"Old Version 3.729\" or earlier."
+  14020, 	"■Editor.exe v3.73X"
 }
 
 STRINGTABLE

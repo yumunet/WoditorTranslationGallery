@@ -2279,7 +2279,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL "「タイプ名」で指定 (-)", 1256, STATIC, SS_LEFT | WS_CHILD | WS_GROUP, 226, 89, 78, 14 
 }
 
-170 DIALOGEX 0, 0, 453, 382
+170 DIALOGEX 0, 0, 453, 398
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "ゲームデータの作成"
 LANGUAGE LANG_JAPANESE, 0x1
@@ -2320,6 +2320,7 @@ FONT 9, "MS Shell Dlg"
    CONTROL " 動作バージョンを【最新】から【<VER>】に固定化する(推奨) \r\n 将来的にも安定動作します。※「ゲーム基本設定」で後からVer変更可", 1902, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 221, 304, 220, 20 , WS_EX_STATICEDGE
    CONTROL " 【ブラウザウディタ】での動作を許可する（Data.wolfのみ推奨）\r\n → 【BrowserWoditor.dat】をBasicDataフォルダ内に設置します", 1903, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 221, 329, 194, 20 , WS_EX_STATICEDGE
    CONTROL "ブディタ\r\nURL開く", 2023, BUTTON, BS_PUSHBUTTON | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 416, 328, 27, 23 
+   CONTROL "完了後に出力フォルダを開く", 1904, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 287, 381, 108, 12 
 }
 
 171 DIALOGEX 0, 0, 249, 90
@@ -6843,6 +6844,7 @@ LANGUAGE LANG_JAPANESE, 0x1
   14017, 	"■Game.exe　Ver3.729\r\n●[変数操作+/ピクチャ] 文字列ピクチャ内で「\\my[?]」や「\\ay[?]」などにより表示位置を上へ戻した場合、「画像サイズ(縦)」にそれまでの最大下端が反映されないバグを修正（ピクチャの当たり判定にも影響します）\r\n●[変数操作+/マップイベント] ファイル名が「$.png」で終わるキャラチップが設定されたマップイベントから「キャラチップ縦分割数」を取得した場合、誤って4が返るバグを修正（正しくは1）\r\n  →　もしこれらの仕様を使用していて挙動が意図通りでなくなってしまった場合は、バージョン調整を「旧Ver3.692時点の挙動」以前に戻してください。"
   14018, 	"コモンイベントが変更されています。\r\n閉じる前に保存しますか？\r\n（保存しない場合、変更が失われます）"
   14019, 	"■Game.exe　Ver3.730\r\n●[文字列操作] 隠しコード「FIND_PATH」がマップのループ設定に対応（デフォルトでマップループを考慮した経路を返します。/LOOP_XY /NO_LOOPのようなオプションも追加）\r\n●[動作指定] 自動移動がループありマップに対応\r\n → 旧仕様に戻したい場合は、バージョン調整を「旧Ver3.729時点の挙動」以前に戻してください。"
+  14020, 	"■Editor.exe　Ver3.73X"
 }
 
 STRINGTABLE
